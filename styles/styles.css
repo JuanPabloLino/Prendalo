@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+li{
+    list-style: none;
+}
+.dropdown-toggle::after {
+    display:none;
+    margin-top: 10em;
+}
+
+.sectionOne{
+    background-color: aqua;
+    margin-top: 6em;
+}
+
+.sectionOne__element1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3em 0em 0em 4em;
+    text-align: initial;
+}
+
+.sectionOne__element2{
+    display: flex;
+    margin-top: 3em;
+}
+
+.sectionTwo{
+    margin-top: 3em;
+    background-color: rgb(83, 40, 240);
+    color: white;
+    text-align: center;
+    padding: 3em;
+}
+
+.footer{
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+    background-color: rgb(36, 60, 201);
+}
