@@ -1,21 +1,27 @@
-body{
+* {
+    padding: 0px;
+    margin: 0px
+}
+
+body {
     background-color: rgb(255, 255, 255);
 }
 
-li{
+li {
     list-style: none;
 }
+
 .dropdown-toggle::after {
-    display:none;
+    display: none;
     margin-top: 10em;
 }
 
-.sectionOne{
+.sectionOne {
     background-color: aqua;
     margin-top: 6em;
 }
 
-.sectionOne__element1{
+.sectionOne__element1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,12 +29,12 @@ li{
     text-align: initial;
 }
 
-.sectionOne__element2{
+.sectionOne__element2 {
     display: flex;
     margin-top: 3em;
 }
 
-.sectionTwo{
+.sectionTwo {
     margin-top: 3em;
     background-color: rgb(83, 40, 240);
     color: white;
@@ -36,10 +42,17 @@ li{
     padding: 3em;
 }
 
-.footer{
+.footer {
     color: white;
     padding-top: 3em;
     padding-bottom: 3em;
     margin-bottom: 3em;
     background-color: rgb(36, 60, 201);
+}
+
+.navbar-nav {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: flex-end;
 }
