@@ -1,3 +1,11 @@
+/*
+Azul: #00355B
+Celeste: #70BBDA
+Rojo: #FF4F3D
+Mostaza: #FFBF3A
+Violeta: #4E29B2
+*/
+
 * {
     padding: 0px;
     margin: 0px
@@ -5,10 +13,56 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    font: Poppins;
+}
+
+.logo a {
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-right: 0px;
+    margin-left: auto;
 }
 
 li {
     list-style: none;
+    display: inline-block;
+}
+
+li a {
+    text-align: center;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    transition: background-size .2s;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+    color: black;
+}
+
+.container {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar {
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 36px;
 }
 
 .dropdown-toggle::after {
@@ -17,8 +71,7 @@ li {
 }
 
 .sectionOne {
-    background-color: aqua;
-    margin-top: 6em;
+    background-color: #70BBDA;
 }
 
 .sectionOne__element1 {
@@ -51,8 +104,27 @@ li {
 }
 
 .navbar-nav {
-    flex: 1;
     margin: auto !important;
     display: flex;
     justify-content: flex-end;
+}
+
+.nav-bg-color {
+    background-color: #70BBDA;
+}
+
+@media (min-width: 600px) {
+    .navbar{
+        height: 64px;
+    }
+    .logo a {
+        font-size: 24px;
+        align-self: center;
+    }
+    li{
+        margin: 20px;
+    }
+    li a {
+        font-size: 18px;
+    }
 }
