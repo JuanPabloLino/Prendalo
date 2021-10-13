@@ -13,62 +13,92 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light bg-light ">
-                <div class="container-fluid d-flex">
-                    <a>Prendalo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavPrendalo"
-                        aria-controls="NavPrendalo" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-
-                    <div class="collapse navbar-collapse justi" id="NavPrendalo">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Quienes Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle margin-right-5" data-bs-toggle="dropdown" href=""
-                                    role="button" aria-expanded="false">Vehículos</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Autos</a></li>
-                                    <li><a class="dropdown-item" href="#">Motos</a></li>
-                                    <li><a class="dropdown-item" href="#">Camiones</a></li>
-                                    <li><a class="dropdown-item" href="#">Utilitarios</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
+        <div class="container-fluid navbar-dark ">
+            <nav class="d-flex justify-content-around nav-bg-color  ">
+                <div class="d-flex logo align-items-center">
+                    <a >Prendalo</a>
                 </div>
+                <div class="navbar">
+                    <ul class="">
+                        <li>
+                            <a class = "" href="#">Quienes Somos</a>
+                        </li>
+                        <li>
+                            <a   class = "" data-bs-toggle="dropdown" href="" role="button" aria-expanded="false">Linea de Credito</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Autos</a></li>
+                                <li><a class="dropdown-item" href="#">Motos</a></li>
+                                <li><a class="dropdown-item" href="#">Camiones</a></li>
+                                <li><a class="dropdown-item" href="#">Utilitarios</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class = "hover hover-3" style = "font-weight: 600" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
             </nav>
         </div>
     </header>
-    <section class="container sectionOne">
+    <section class="container-fluid sectionOne">
         <div class="row">
             <div class="col sectionOne__element1">
-                <h5>Tenés crédito,vos elegis</h5>
+                <p>Tenés crédito,<br>vos elegis</p>
                 <div class="sectionOne__element2">
-                    <button class="m-3">Simular cuota</button>
-                    <h5 class="m-3">¿Cómo funciona?</h5>
+                    <button class="element2__button">Simular cuota</button>
+                    <p class="">¿Cómo funciona?</p>
                 </div>
             </div>
             <div class="col">
-                <div class="col"><img width="100%" height="400em"></img></div>
+                <div class="col sectionOne__images">
+                    <img class="imagen2" width="100%" height="400em"></img>
+                    <img class="imagen1" width="100%" height="400em"></img></div>
             </div>
         </div>
     </section>
-    <section class="container sectionTwo">
-        <h5>Te damos la posibilidad que puedas elegir dónde y cómo comprar tu próximo vehículo, mejorando tu poder de
-            negociación</h5>
-        <p>Además, tasa fija y validez 30días, super!</p>
+    <section class="container-fluid sectionTwo">
+        <p>Nosotros te damos un crédito prendario.<br> Vos elegís dónde comprar. <br>Así de simple.</p>
     </section>
     <section>
-        <div class="container sectionThree mt-5">
+        <div class="grid sectionThree">
+            <div class="row row-cols-7 sectionThree__images">
+                <div class="col"><p>Tenemos estos beneficios para vos</p></div>
+                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
+                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
+                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
+                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
+                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
+                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
+            </div>
+        </div>
+    </section>
+    <section class="container sectionFour">
+        <div class="sectionFour__elements">
+            <p class="sectionFour__title">En tres pasos, obtené la aprobación crediticia:</p>
+            <div class="container-fluid sectionFour__information">
+                <div class="d-flex">
+                    <div class="col p-5">
+                        <p class="information__text1 text-center">1. Simula tu crédito</p>
+                        <p class="information__text2 text-center">Ingresa el importe que necesitás y conocé el valor de tu cuota </p>
+                    </div>
+                    <div class="col p-5">
+                        <p class="information__text1 text-center">2. Completá el formulario </p>
+                        <p class="information__text2 text-center">Con tus datos y sin compromiso, obtené tu precalificación online</p>
+                    </div>
+                    <div class="col p-5 text-center">
+                        <p class="information__text1 ">3. Recibí tu respuesta </p>
+                        <p class="information__text2 ">En el día tendrás tu calificación , validez 30 días!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn sectionFour__button">Simular Cuota</button>
+    </section>
+    <section>
+        <div class="container sectionFive mt-5">
             <div class="row row-cols-2">
                 <div class="col"><img width="100%" height="400em"></img></div>
                 <div class="col"><img width="100%" height="400em"></img></div>
@@ -83,21 +113,7 @@
             </div>
         </div>
     </section>
-    <section class="container mt-5 sectionFour">
-        <div class="row ">
-            <div class="col card m-3 align-items-center">
-                <h5>¿Sos agencia?</h5>
-                <p>Únete y aumenta tus posibilidades</p>
-                <button class="w-50">Conocer mas</button>
-            </div>
-            <div class="col card m-3 align-items-center">
-                <h5>¿Querés vender tu usado?</h5>
-                <p>Tenemos muchos compradores buscando tu auto</p>
-                <button class="w-50">Conocer mas</button>
-            </div>
-        </div>
-    </section>
-    <section class="container text-center mt-5 mb-5 sectionFive ">
+    <section class="container text-center mt-5 mb-5 sectionSix ">
         <h4>¿Quedaste con dudas?</h4>
         <p>Preguntas frecuentes</p>
     </section>
