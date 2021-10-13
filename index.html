@@ -10,34 +10,37 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="container-fluid navbar-dark ">
-        <div class="container ">
-            <nav class="d-flex justify-content-around nav-bg-color  ">
-                <div class="d-flex logo align-items-center">
-                    <a >Prendalo</a>
-                </div>
-                <div class="">
-                    <ul class="navbar">
-                        <li>
-                            <a class = "" href="#">Quienes Somos</a>
-                        </li>
-                        <li>
-                            <a class = "" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Linea de Credito</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Autos</a></li>
-                                <li><a class="dropdown-item" href="#">Motos</a></li>
-                                <li><a class="dropdown-item" href="#">Camiones</a></li>
-                                <li><a class="dropdown-item" href="#">Utilitarios</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class = "hover hover-3" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="container ">
+                <nav class="d-flex justify-content-between nav-bg-color  ">
+                    <div class="d-flex logo align-items-start">
+                        <a>Prendalo</a>
+                    </div>
+                    <div class="">
+                        <ul class="navbar">
+                            <li>
+                                <a class="" href="#">Quienes Somos</a>
+                            </li>
+                            <li>
+                                <a class="" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Linea
+                                    de Credito</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Autos</a></li>
+                                    <li><a class="dropdown-item" href="#">Motos</a></li>
+                                    <li><a class="dropdown-item" href="#">Camiones</a></li>
+                                    <li><a class="dropdown-item" href="#">Utilitarios</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="hover hover-3 fw-medium" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     <section class="container-fluid sectionOne">
@@ -51,24 +54,78 @@
             </div>
             <div class="col">
                 <div class="col sectionOne__images">
-                    <img class="imagen2" width="100%" height="400em"></img>
-                    <img class="imagen1" width="100%" height="400em"></img></div>
+                    <img class="imagen2" width="100%" height="400em">
+                    <img class="imagen1" width="100%" height="400em">
+                </div>
             </div>
         </div>
     </section>
     <section class="container-fluid sectionTwo">
-        <p>Nosotros te damos un crédito prendario.<br> Vos elegís dónde comprar. <br>Así de simple.</p>
+        <h2>Nosotros te damos un crédito prendario.<br> Vos elegís dónde comprar. <br>Así de simple.</h2>
     </section>
     <section class="sectionThree">
-        <div class="row row-cols-7 sectionThree__images">
-            <div class="row row-cols-7 images__info">
-                <div class="col-4"><p>Tenemos estos beneficios para vos</p></div>
-                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
-                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
-                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
-                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
-                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
-                <div class="col"><img class="ImagenPrueba" width="100%" height="400em"></img></div>
+        <div class="sectionThree__images">
+            <div class="row images__info">
+                <div class="col-4">
+                    <h3>Tenemos estos beneficios para vos</h3>
+                </div>
+                <div class="col-8 row containerSec2">
+                    <div class=" col cardcontainer">
+                        <div class="col imgCard  d-flex flex-column justify-content-around">
+                            <div class="sec2CardImg">
+                                <img class="ImagenPrueba">
+                            </div>
+                            <div class="sec2CardP">
+                                <p class="">Tasa Fija para ganarle a la inflacion</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col cardcontainer">
+                        <div class="col imgCard  d-flex flex-column justify-content-around">
+                            <div class="sec2CardImg">
+                                <img class="ImagenPrueba">
+                            </div>
+                            <div class="sec2CardP">
+                                <p class="">Preaprobado con 30 días de validez</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class=" col cardcontainer">
+                        <div class="col imgCard  d-flex flex-column justify-content-around">
+                            <div class="sec2CardImg">
+                                <img class="ImagenPrueba">
+                            </div>
+                            <div class="sec2CardP">
+                                <p class="">Trámites online y sin demoras</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col cardcontainer">
+                        <div class="col imgCard  d-flex flex-column justify-content-around">
+                            <div class="sec2CardImg">
+                                <img class="ImagenPrueba">
+                            </div>
+                            <div class="sec2CardP">
+                                <p class="">Posibilidad de elegir donde comprar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col cardcontainer">
+                        <div class="col imgCard  d-flex flex-column justify-content-around">
+                            <div class="sec2CardImg">
+                                <img class="ImagenPrueba">
+                            </div>
+                            <div class="sec2CardP">
+                                <p class="">Capacidad de negociar con dinero en mano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -79,11 +136,13 @@
                 <div class="d-flex">
                     <div class="col m-4">
                         <p class="information__text1">1.<br> Simula tu crédito</p>
-                        <p class="information__text2">Ingresa el importe que necesitás y conocé el valor de tu cuota </p>
+                        <p class="information__text2">Ingresa el importe que necesitás y conocé el valor de tu cuota
+                        </p>
                     </div>
                     <div class="col m-4">
                         <p class="information__text1">2.<br> Completá el formulario </p>
-                        <p class="information__text2">Con tus datos y sin compromiso, obtené tu precalificación online</p>
+                        <p class="information__text2">Con tus datos y sin compromiso, obtené tu precalificación online
+                        </p>
                     </div>
                     <div class="col m-4 ">
                         <p class="information__text1">3.<br> Recibí tu respuesta </p>
@@ -99,34 +158,42 @@
             <div class="row row-cols-2">
                 <div class="col sectionFive__element">
                     <b>Autos</b>
-                    <p>Si querés disfrutar de todas las ventajas de un modelo nuevo, nuestro préstamo prendario te permite financiar a tasa fija. Conocé tu cuota.</p>
+                    <p>Si querés disfrutar de todas las ventajas de un modelo nuevo, nuestro préstamo prendario te
+                        permite financiar a tasa fija. Conocé tu cuota.</p>
                 </div>
                 <div class="col sectionFive__element">
                     <img width="100%" height="400em"></img>
                 </div>
                 <div class="col sectionFive__element">
                     <img width="100%" height="400em">
-                </img></div>
+                    </img>
+                </div>
                 <div class="col sectionFive__element">
                     <b>Motos</b>
-                    <p>Para evitar el tránsito en hora pico o dejar de depender del transporte público, compra tu moto con nuestra línea de crédito para motos. Conocé tu cuota.</p>
+                    <p>Para evitar el tránsito en hora pico o dejar de depender del transporte público, compra tu moto
+                        con nuestra línea de crédito para motos. Conocé tu cuota.</p>
                 </div>
                 <div class="col sectionFive__element">
                     <b>Utilitarios</b>
-                    <p>Porque para seguir creciendo tenés que invertir, nada mejor que un crédito prendario que te permita hacerlo sin comprometer tu patrimonio. Conocé tu cuota.</p>
+                    <p>Porque para seguir creciendo tenés que invertir, nada mejor que un crédito prendario que te
+                        permita hacerlo sin comprometer tu patrimonio. Conocé tu cuota.</p>
                 </div>
                 <div class="col sectionFive__element">
-                    <img width="100%" height="400em"></img></div>
+                    <img width="100%" height="400em"></img>
+                </div>
                 <div class="col sectionFive__element">
-                    <img width="100%" height="400em"></img></div>
+                    <img width="100%" height="400em"></img>
+                </div>
                 <div class="col sectionFive__element">
                     <b>Camiones</b>
-                <p>Ese que venís mirando hace tiempo, con un préstamo prendario puede ser tuyo. Dejá de posponer tus proyectos. Conocé tu cuota.</p>
-            </div>
+                    <p>Ese que venís mirando hace tiempo, con un préstamo prendario puede ser tuyo. Dejá de posponer tus
+                        proyectos. Conocé tu cuota.</p>
+                </div>
                 <div class="col sectionFive__element">
                     <b>Tractores</b>
-                <p>Más que un vehículo, una herramienta de trabajo para aumentar tu productividad (y tus ingresos). Averiguá cómo podés comprarlo con nuestra línea de créditos prendarios. Conocé tu cuota.</p>
-            </div>
+                    <p>Más que un vehículo, una herramienta de trabajo para aumentar tu productividad (y tus ingresos).
+                        Averiguá cómo podés comprarlo con nuestra línea de créditos prendarios. Conocé tu cuota.</p>
+                </div>
                 <div class="col sectionFive__element">
                     <img width="100%" height="400em"></img>
                 </div>
@@ -169,9 +236,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

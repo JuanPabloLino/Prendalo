@@ -1,33 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
-
-:root{
+:root {
     /* Colors: */
---green-light: #1ED997;
---green: #19703F;
---dark-blue: #00355B;
---blue-light: #70BBDA;
---white: #FFFF;
---orange: #ff4f3d;
---yellow:#FFBF3A;
-
-/* Font */
-
---body-font: 'Poppins', sans-serif;
-
-/* Font */
-
-/* Font weight */
-
---font-regular:400;
---font-medium:500;
---font-bold: 700;
---font-black:900;
-
-/* Margenes */
---mb-1: .5rem;
---mb-2: 1rem;
---mb-3: 1.5rem;
-
+    --green-light: #1ED997;
+    --green: #19703F;
+    --dark-blue: #00355B;
+    --blue-light: #70BBDA;
+    --white: #FFFF;
+    --orange: #ff4f3d;
+    --yellow: #FFBF3A;
+    /* Font */
+    --body-font: 'Poppins', sans-serif;
+    /* Font */
+    --font-10: 10px;
+    --font-14: 14px;
+    --font-16: 16px;
+    --font-18: 18px;
+    --font-21: 21px;
+    --font-24: 24px;
+    --font-40: 40px;
+    /* Font weight */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+    --font-black: 900;
+    /* Margenes */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
 }
 
 * {
@@ -42,8 +41,8 @@ body {
 }
 
 .logo a {
-    font-size: var(--title-black);
-    font-weight: var(--font-bold) ;
+    font-size: var(--font-24);
+    font-weight: var(--font-bold);
 }
 
 ul, p {
@@ -53,9 +52,10 @@ ul, p {
     overflow: hidden;
 }
 
-li {
+ul li {
     list-style: none;
     display: inline-block;
+    padding: 10px;
 }
 
 li a {
@@ -67,13 +67,17 @@ li a {
     background-size: 0% 2px;
     background-repeat: no-repeat;
     color: var(--dark-blue);
-    font-size: 10px;
-    font-weight: bold;
+    font-size: var(--font-18);
+    font-weight: var(--font-bold);
 }
 
 a:hover, a:focus {
     background-size: 100% 2px;
     color: var(--dark-blue);
+}
+
+.fw-medium {
+    font-weight: var(--font-medium);
 }
 
 .container {
@@ -88,9 +92,10 @@ a:hover, a:focus {
     padding: 0px;
     margin-bottom: 0px;
     height: 36px;
-    font-family:var(--title-black);
+    font-family: var(--title-black);
 }
-.navbar-dark{
+
+.navbar-dark {
     background-color: var(--blue-light);
     width: 100%;
 }
@@ -121,7 +126,7 @@ a:hover, a:focus {
     align-items: flex-end;
     flex-direction: column;
     text-align: initial;
-    color: var(--white) ;
+    color: var(--white);
     font-size: var(--title-white-font-size);
     width: 50%;
 }
@@ -131,27 +136,27 @@ a:hover, a:focus {
     margin-bottom: .8em;
 }
 
-.sectionOne__images{
+.sectionOne__images {
     position: relative;
     left: 0;
     top: 0;
 }
 
-.imagen1{
-    position:absolute;
-    width:50%;
+.imagen1 {
+    position: absolute;
+    width: 50%;
     height: 275px;
-    background-color:var(--green-light);
+    background-color: var(--green-light);
 }
 
-.imagen2{
-    position:absolute;
-    width:100%;
+.imagen2 {
+    position: absolute;
+    width: 100%;
     height: 275px;
-    background-color:var(--green);
+    background-color: var(--green);
 }
 
-.sectionOne__element2{
+.sectionOne__element2 {
     display: flex;
     align-items: flex-end;
 }
@@ -164,19 +169,18 @@ a:hover, a:focus {
     margin-left: 25px;
 }
 
-.element2__button{
-    background-color:var(--orange);
+.element2__button {
+    background-color: var(--orange);
     border-radius: 32px;
     width: 162px;
     height: 48px;
 }
 
-.element2__button{
+.element2__button {
     font-size: 16px;
     color: var(--letter-white-color);
     border: 0;
 }
-
 
 /* Section One */
 
@@ -192,13 +196,14 @@ a:hover, a:focus {
     color: var(--dark-blue);
     text-align: center;
     font-size: 32px;
-    font-weight: var(--font-bold) ;
+    font-weight: var(--font-bold);
 }
 
 /* Section Two */
 
 /* Section three*/
-.sectionThree{
+
+.sectionThree {
     display: flex;
     align-items: center;
     width: 100%;
@@ -206,48 +211,81 @@ a:hover, a:focus {
     background-color: var(--blue-light);
 }
 
-.sectionThree__images{
+.sectionThree__images {
     display: flex;
     align-items: flex-end;
     margin: 0 3em 0 3em;
 }
 
-.sectionThree__images p {
+.sectionThree__images h3 {
     font-size: 32px;
     color: var(--dark-blue);
     font-weight: var(--font-bold);
     padding-left: 11em;
-
 }
 
-.images__info{
+.images__info {
     display: flex;
-    align-items: flex-end
+    align-items: flex-end;
+    padding: 10px;
 }
 
-.ImagenPrueba{
-    height: 298px;
-    width: 162px;
+.ImagenPrueba {
+    width: 129px;
+    height: 186px;
     background-color: var(--dark-blue);
     border-radius: 1em;
     padding: 0;
     margin: 0;
-
-
 }
+
+.imgCard {
+    background-color: white;
+    width: 162px;
+    height: 298px;
+    border-radius: 1em;
+    margin:auto;
+}
+
+.imgCard p {
+    font: var(--font-black);
+    font-size: var(--font-14);
+    font-weight: var(--font-bold);
+    width: 116px;
+    height: 62px;
+    text-align: center;
+    text-justify: center;
+    
+}
+
+.sec2CardImg{
+    padding:auto;
+    margin:auto;
+}
+.cardcontainer{
+    padding:5px;
+    margin: auto
+}
+
+.sec2CardP{
+    padding:auto;
+    margin:auto;
+}
+
+
 
 /* Section three */
 
 /* Section four */
 
-.sectionFour{
+.sectionFour {
     height: 520px;
     width: 100%;
     text-align: center;
     margin-top: 6em;
 }
 
-.sectionFour__elements{
+.sectionFour__elements {
     display: flex;
     flex-direction: column;
 }
@@ -256,17 +294,16 @@ a:hover, a:focus {
     color: var(--orange);
     font-weight: var(--font-bold);
     font-size: 24px;
-
 }
 
-.sectionFour__information{
+.sectionFour__information {
     display: flex;
     justify-content: center;
     width: 100%;
     text-align: left;
 }
 
-.information__text1{
+.information__text1 {
     font-weight: var(--font-bold);
     color: var(--orange);
     font-size: 18px;
@@ -274,42 +311,38 @@ a:hover, a:focus {
     text-align: left;
 }
 
-.information__text2{
-    color:var(--blue-light);
+.information__text2 {
+    color: var(--blue-light);
     width: 120px;
     text-align: left;
-
 }
 
-.sectionFour__button{
+.sectionFour__button {
     background-color: var(--orange);
     color: var(--white);
     font-weight: var(--font-bold);
     border-radius: 32px;
     width: 260px;
-
 }
+
 /* Section four */
 
 /* Section five */
 
-.sectionFive{
-
-}
+.sectionFive {}
 
 .sectionFive b {
     font-size: 40px;
     margin: 0 1em 0 1em;
-
 }
 
-.sectionFive p{
+.sectionFive p {
     font-size: 18px;
     margin: 0 2em 0 2.2em;
     width: 50%;
 }
 
-.sectionFive__element{
+.sectionFive__element {
     height: 400px;
     padding: 0;
     display: flex;
@@ -318,12 +351,11 @@ a:hover, a:focus {
     align-items: flex-start;
 }
 
-
 /* Section five */
 
 /* Section six */
 
-.sectionSix{
+.sectionSix {
     background-color: var(--blue-light);
     height: 438px;
     display: flex;
@@ -331,14 +363,13 @@ a:hover, a:focus {
     justify-content: center;
 }
 
-.sectionSix__elements{
+.sectionSix__elements {
     display: flex;
     height: 238px;
     margin: 3em;
-
 }
 
-.elements__1{
+.elements__1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,40 +378,39 @@ a:hover, a:focus {
     border-radius: 12px;
 }
 
-.sectionSix__title{
-    color:var(--blue-light)
+.sectionSix__title {
+    color: var(--blue-light)
 }
 
-.sectionSix__info{
+.sectionSix__info {
     color: var(--dark-blue);
 }
 
-.sectionSix__button{
-    background-color:var(--orange);
+.sectionSix__button {
+    background-color: var(--orange);
     color: var(--white);
     border-radius: 32px;
     font-weight: var(--font-bold);
-
 }
 
 /* Section six */
 
 /* Section seven */
 
-.sectionSeven{
-background-color: var(--yellow);
-height: 240px;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+.sectionSeven {
+    background-color: var(--yellow);
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.sectionSeven b{
+.sectionSeven b {
     color: var(--dark-blue);
     font-size: 40px;
 }
 
-.sectionSeven p{
+.sectionSeven p {
     color: var(--dark-blue);
     font-size: 16px;
 }
@@ -408,18 +438,24 @@ justify-content: space-around;
     background-color: var(--nav-color);
 }
 
-@media (min-width: 600px) {
-    .navbar{
+@media (max-width: 600px) {
+    .navbar {
         height: 64px;
     }
     .logo a {
-        font-size: 24px;
+        font-size: px;
         align-self: center;
     }
-    li{
+    li {
         margin: 20px;
     }
     li a {
         font-size: 18px;
+    }
+    .sectionOne {
+        font-size: 21px;
+        font-weight: var(--font-bold);
+        width: 100%;
+        height: 205px;
     }
 }
