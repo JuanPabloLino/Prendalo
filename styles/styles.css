@@ -8,6 +8,7 @@
 --blue-light: #70BBDA;
 --white: #FFFF;
 --orange: #ff4f3d;
+--yellow:#FFBF3A;
 
 /* Font */
 
@@ -47,11 +48,9 @@ body {
 
 ul, p {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
-    margin-right: 0px;
-    margin-left: 0px;
 }
 
 li {
@@ -200,7 +199,7 @@ a:hover, a:focus {
 
 /* Section three*/
 .sectionThree{
-    display: grid;
+    display: flex;
     align-items: center;
     width: 100%;
     height: 498px;
@@ -217,13 +216,22 @@ a:hover, a:focus {
     font-size: 32px;
     color: var(--dark-blue);
     font-weight: var(--font-bold);
-    padding-left: 2em;
+    padding-left: 11em;
+
+}
+
+.images__info{
+    display: flex;
+    align-items: flex-end
 }
 
 .ImagenPrueba{
     height: 298px;
     width: 162px;
     background-color: var(--dark-blue);
+    border-radius: 1em;
+    padding: 0;
+    margin: 0;
 
 
 }
@@ -255,35 +263,144 @@ a:hover, a:focus {
     display: flex;
     justify-content: center;
     width: 100%;
+    text-align: left;
 }
 
 .information__text1{
     font-weight: var(--font-bold);
+    color: var(--orange);
     font-size: 18px;
     width: 120px;
+    text-align: left;
 }
 
 .information__text2{
     color:var(--blue-light);
-    width: 102px;
+    width: 120px;
+    text-align: left;
 
 }
 
 .sectionFour__button{
     background-color: var(--orange);
     color: var(--white);
+    font-weight: var(--font-bold);
     border-radius: 32px;
     width: 260px;
 
 }
 /* Section four */
 
+/* Section five */
+
+.sectionFive{
+
+}
+
+.sectionFive b {
+    font-size: 40px;
+    margin: 0 1em 0 1em;
+
+}
+
+.sectionFive p{
+    font-size: 18px;
+    margin: 0 2em 0 2.2em;
+    width: 50%;
+}
+
+.sectionFive__element{
+    height: 400px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* Section five */
+
+/* Section six */
+
+.sectionSix{
+    background-color: var(--blue-light);
+    height: 438px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionSix__elements{
+    display: flex;
+    height: 238px;
+    margin: 3em;
+
+}
+
+.elements__1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+.sectionSix__title{
+    color:var(--blue-light)
+}
+
+.sectionSix__info{
+    color: var(--dark-blue);
+}
+
+.sectionSix__button{
+    background-color:var(--orange);
+    color: var(--white);
+    border-radius: 32px;
+    font-weight: var(--font-bold);
+
+}
+
+/* Section six */
+
+/* Section seven */
+
+.sectionSeven{
+background-color: var(--yellow);
+height: 240px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.sectionSeven b{
+    color: var(--dark-blue);
+    font-size: 40px;
+}
+
+.sectionSeven p{
+    color: var(--dark-blue);
+    font-size: 16px;
+}
+
+/* Section seven */
+
 .footer {
-    color: white;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    margin-bottom: 3em;
-    background-color: rgb(36, 60, 201);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    background-color: var(--orange);
+    height: 64px;
+    font-size: 24px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 12px;
 }
 
 .navbar-nav {
