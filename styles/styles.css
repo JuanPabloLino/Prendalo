@@ -331,11 +331,14 @@ li a {
 
 .elements__image {
     position: relative;
-    width: 650px;
+    /*width: 650px;*/
     min-width: 50%;
     height: 465px;
     min-width: 20%;
     z-index: 0;
+}
+.elements__image img {
+    width: 100%;
 }
 
 .sectionFour__title {
@@ -407,8 +410,7 @@ li a {
     color: var(--white);
     font-weight: var(--font-bold);
     border-radius: 32px;
-    width: 450px;
-    height: 60px;
+    
 }
 
 /* Section four */
