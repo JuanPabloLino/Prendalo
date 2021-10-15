@@ -369,7 +369,6 @@ li a {
     right: auto;
 }
 
-}
 
 /* Section four */
 
@@ -498,7 +497,6 @@ li a {
 
 /* Section five */
 
-.sectionFive {}
 
 .sectionFive b {
     font-size: 40px;
@@ -512,7 +510,7 @@ li a {
 }
 
 .sectionFive__element {
-    height: 400px;
+    height: 35vh;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -643,6 +641,9 @@ li a {
     }
     #carousel {
         display: block;
+    }
+    .sectionFive b{
+        font-size: 16px;
     }
 }
 
