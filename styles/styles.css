@@ -445,6 +445,7 @@ max-width: 174px;
 
 .sectionFive__element img{
     opacity: 0;
+    width: 100%;
 }
 
 .border-right{
@@ -458,6 +459,8 @@ max-width: 174px;
     border-top-left-radius: 16px;
 
 }
+
+
 
 /* Section five */
 
