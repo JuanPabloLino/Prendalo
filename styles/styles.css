@@ -47,6 +47,10 @@ body {
     font-weight: var(--font-bold);
 }
 
+a{
+    padding: 0px;
+}
+
 ul, p {
     list-style-type: none;
     margin: 0px;
@@ -57,20 +61,16 @@ ul, p {
 ul li {
     list-style: none;
     display: inline-block;
-    padding: 10px;
+    padding: 0px;
 }
 
 li a {
     text-align: center;
     text-decoration: none;
-    
     color: var(--dark-blue);
     font-size: var(--font-18);
     font-weight: var(--font-bold);
 }
-
-
-
 
 .hover{
     background-image: linear-gradient(currentColor, currentColor);
@@ -104,6 +104,10 @@ li a {
     font-family: var(--title-black);
 }
 
+.navbar li, a{
+    padding-left: 10px;
+}
+
 .navbar-dark {
     background-color: var(--blue-light);
     width: 100%;
@@ -124,15 +128,18 @@ li a {
     justify-content: space-between;
     background-color: var(--blue-light);
     color: var(--white);
-    font-size: 64px;
+    font-size: 3.33vw;
     font-weight: var(--font-bold);
     width: 100%;
-    height: 60vh;
+    height: 400px;
+    height: 80vh;
 
 }
 
 .images__man{
-    width: 100%;
+    position: relative;
+    width: 62%;
+    height: auto;
 }
 
 .sectionOne__element1 {
@@ -156,17 +163,15 @@ li a {
     margin-top: 0;
     left: 0;
     top: 0;
-    
 }
 
 .imagen1 {
-    position: relative;
-    max-width: 100%;
+    width: 100%;
+    max-width: 37.34vw;
     height: auto;
-    margin-right: 2em;
 }
 
-/* .imagen1::after{ 
+/* .imagen1::after{
     -webkit-transform: scale(1.5);
     transform: scale(1.5)
 } */
@@ -313,6 +318,8 @@ max-width: 174px;
 /* Section four */
 
 .sectionFour {
+    display: flex;
+    justify-content: center;
     height: 40em;
     width: 100%;
     text-align: center;
@@ -322,6 +329,7 @@ max-width: 174px;
 .sectionFour__elements {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .elements__image{
@@ -399,14 +407,12 @@ max-width: 174px;
 }
 
 .sectionFour__button {
-    position: relative;
     background-color: var(--orange);
     color: var(--white);
     font-weight: var(--font-bold);
     border-radius: 32px;
     width: 450px;
     height: 60px;
-    left: 45em;
 }
 
 /* Section four */
@@ -435,7 +441,10 @@ max-width: 174px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
+}
+
+.sectionFive__element img{
+    opacity: 0;
 }
 
 .border-right{
@@ -541,7 +550,22 @@ max-width: 174px;
 
 /* Media Queries */
 
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .sectionOne {
+        font-size: 21px;
+        font-weight: var(--font-bold);
+        width: 100%;
+        height: 305px;
+    }
+
+    .images__man{
+        position: relative;
+        width: 170px;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
     .navbar {
         height: 64px;
     }
@@ -555,14 +579,110 @@ max-width: 174px;
     li a {
         font-size: 18px;
     }
+
     .sectionOne {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 205px;
+        height: 35vh;
     }
 
-    
+    .images__man{
+        width: 170px;
+    }
+
+    /* Section three */
+    .sectionThree{
+        display: flex;
+        height: auto;
+        width:100%
+    }
+
+    .sectionThree__images{
+        width:100%
+    }
+
+    .images__info{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width:100%;
+        align-items: center;
+    }
+
+    .info_title{
+        display: flex;
+        width: 100%;
+    }
+    .sec3Text{
+        max-width:100%;
+        padding-top: 3em;
+    }
+
+    .imgCard{
+        min-width: 124px;
+    }
+
+    .containerSec2{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        justify-content: center;
+    }
+
+    .cardcontainer{
+        margin: 3em;
+    }
+
+    /* Section three */
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 36px;
+        padding: 0px;
+        margin-bottom: 0px;
+        height: 36px;
+    }
+
+    .navbar li, a{
+        padding: 0px;
+    }
+
+    .logo a {
+        font-size: px;
+        align-self: center;
+    }
+    li, a {
+        margin: 0px;
+        padding: 0px;
+    }
+    li a {
+        font-size: 18px;
+    }
+
+    /* Section One */
+
+    .sectionOne {
+        font-size: 21px;
+        font-weight: var(--font-bold);
+        width: 100%;
+        height: 38vh;
+    }
+
+    .images__man{
+    width: 170px;
+
+    }
 
 
     /* Section three */
