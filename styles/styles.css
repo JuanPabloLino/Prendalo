@@ -293,6 +293,8 @@ li a {
     margin: auto;
 }
 
+.sec3CardImg img{width: 100%;}
+
 .cardcontainer {
     padding: 5px;
     margin: auto
