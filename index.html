@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class=" sectionOne__images">
+                    <div class="container">
                         <img class="images__man" src="/Images/hombre_adobespark.png" alt="hombre-notebook">
                     </div>
                 </div>
@@ -76,7 +76,9 @@
         </div>
     </section>
     <section class="container-fluid sectionTwo">
-        <h2>Nosotros te damos un crédito prendario.<br> Vos elegís dónde comprar. <br>Así de simple.</h2>
+        <h2>Nosotros te damos un crédito prendario.<br> Vos elegís dónde comprar. <br>
+            <div class="sectionTwo__text">Así de simple.</div>
+        </h2>
     </section>
     <section class="container-fluid sectionThree ">
         <div class="sectionThree__images d-flex flex-column">
@@ -88,8 +90,8 @@
                 </div>
             </div>
             <div class="row images__info d-flex justify-content-center">
-                <div class="col-12 row containerSec2">
-                    <div class=" col-2 cardcontainer">
+                <div class="containerSec3">
+                    <div class="cardcontainer">
                         <div class="col imgCard  d-flex flex-column justify-content-around">
                             <div class="sec3CardImg">
                                 <img class="" src="images/AdobeStock_264606262.jpeg" alt="inflacion">
@@ -99,8 +101,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class=" col-2 cardcontainer">
+                    <div class="cardcontainer">
                         <div class="col imgCard  d-flex flex-column justify-content-around">
                             <div class="sec3CardImg">
                                 <img class="" src="images/preapobado.jpeg " alt="Preaprobado">
@@ -110,9 +111,7 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class=" col-2 cardcontainer">
+                    <div class="cardcontainer">
                         <div class="col imgCard  d-flex flex-column justify-content-around">
                             <div class="sec3CardImg">
                                 <img class="" src="images/AdobeStock_257348437.jpeg" alt="online">
@@ -122,8 +121,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class=" col-2 cardcontainer">
+                    <div class="cardcontainer">
                         <div class="col imgCard  d-flex flex-column justify-content-around">
                             <div class="sec3CardImg">
                                 <img class="" src="images/AdobeStock_264606265.jpeg" alt="elegir">
@@ -133,8 +131,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class=" col-2 cardcontainer">
+                    <div class="cardcontainer">
                         <div class="col imgCard  d-flex flex-column justify-content-around">
                             <div class="sec3CardImg">
                                 <img class="" src="images/dinero_en_mano.jpeg" alt="negociar">
@@ -181,67 +178,55 @@
             </div>
             <button class="btn sectionFour__button">Simular cuota</button>
         </div>
-    </section>
 
-    <div id="carousel" style="background-image:url('./Images/manomobile.png');">
-
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carousel" style="background-image:url('./Images/manomobile.png');">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="carousel-container ">
+                            <p class="information__text1">1.<br> Simula ya tu crédito</p><br>
+                            <p class="information__text2">Ingresa el importe que necesitás, conocé el valor aproximado
+                                de tu
+                                cuota antes de solicitarlo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-container">
+                            <p class="information__text1">2.<br> Completá el formulario online </p><br>
+                            <p class="information__text2">Con tus datos y sin compromiso, obtené tu precalificación
+                                online
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-container ">
+                            <p class="information__text1">3.<br> Recibí tu respuesta en el día </p><br>
+                            <p class="information__text2">Porque sabemos lo importante que es para vos contar con
+                                nosotros
+                                sin demoras</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-            <div class="carousel-inner">
-                <div class="carousel-item active ">
-                    <div class="carousel-container ">
-
-                        <p class="information__text1">1.<br> Simula ya tu crédito</p><br>
-                        <p class="information__text2">Ingresa el importe que necesitás, conocé el valor aproximado de tu
-                            cuota antes de solicitarlo
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-container">
-
-                        <p class="information__text1">2.<br> Completá el formulario online </p><br>
-                        <p class="information__text2">Con tus datos y sin compromiso, obtené tu precalificación online
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-container ">
-
-                        <p class="information__text1">3.<br> Recibí tu respuesta en el día </p><br>
-                        <p class="information__text2">Porque sabemos lo importante que es para vos contar con nosotros
-                            sin demoras</p>
-                    </div>
-
-                </div>
-
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-
-
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-
+    </section>
     <section class="container">
         <div class="container-fluid sectionFive">
             <div class="row row-cols-2">

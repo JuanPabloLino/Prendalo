@@ -88,6 +88,10 @@ li a {
     width: 100%;
 }
 
+.header{
+    background-color: var(--blue-light);
+}
+
 /* Navbar */
 
 .navbar {
@@ -135,28 +139,23 @@ li a {
     font-size: 3.33vw;
     font-weight: var(--font-bold);
     width: 100%;
-    height: 60vh;
+    height: 80vh;
 }
 
 .images__man {
     position: relative;
-    width: 62%;
-    height: auto;
 }
 
 .sectionOne__element1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: fleximages__man-start;
+    justify-content: center;
     text-align: initial;
     color: var(--white);
     font-size: var(--title-white-font-size);
     
     
-}
-
-.sectionOne__element1 b {
- /*   color: var(--dark-blue);*/
 }
 
 .sectionOne__images {
@@ -165,10 +164,6 @@ li a {
     margin-top: 0;
     left: 0;
     top: 0;
-}
-
-.sectionOne__images img {
-    width: 100%;
 }
 
 .imagen1 {
@@ -231,7 +226,15 @@ li a {
     color: var(--dark-blue);
     text-align: center;
     font-size: 32px;
-    font-weight: var(--font-bold);
+    
+}
+
+.sectionTwo h2{
+    font-weight: var(--font-black);
+}
+
+.sectionTwo__text{
+    color: var(--green-light);
 }
 
 /* Section Two */
@@ -249,8 +252,9 @@ li a {
 
 .sectionThree__images {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin: auto;
+    width: inherit;
 }
 
 .sectionThree__images h3 {
@@ -263,7 +267,7 @@ li a {
     display: flex;
     align-items: flex-end;
     padding: 10px;
-    width: auto;
+    width: 100%;
 }
 
 .ImagenPrueba {
@@ -276,7 +280,7 @@ li a {
 }
 
 .imgCard {
-    width: 162px;
+    width: 194px;
     height: 298px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 9px #0000004D;
@@ -295,6 +299,13 @@ li a {
     letter-spacing: 0px;
 }
 
+.containerSec3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
 .sec3CardImg {
     padding: auto;
     margin: auto;
@@ -302,6 +313,7 @@ li a {
 
 .sec3CardImg img {
     width: 100%;
+    border-radius: 16px;
 }
 
 .cardcontainer {
@@ -631,16 +643,80 @@ footer .btn-social {
 /* Media Queries */
 
 @media only screen and (max-width: 800px) {
+
+    /* Section One */
+
     .sectionOne {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 305px;
+        height: 48vh;
     }
     .images__man {
-        position: relative;
-        width: 170px;
+        width: 100%;
+        
     }
+
+    .sectionOne__element1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .element1__info{
+        display: flex;
+        margin-top: 18px;
+    }
+
+    .element1__info p {
+        margin-right: 9px;
+    }
+
+    .sectionOne__element1 b{
+        color: var(--white);
+    }
+
+    .sectionOne__element2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionOne__element2 p {
+        margin-top: 12px;
+        margin-left: 0px;
+        font-size: 12px;
+    }
+
+    .element2__button{
+        height: 30px;
+        margin-top: 18px;
+        font-size: 11px;
+    }
+
+    /* Section One */
+
+    /* Section Three */
+    .containerSec3{
+        justify-content: flex-start;
+        width: 216px;
+    }
+
+    .sectionThree__images h3{
+        font-size: 25px;
+        
+    }
+
+    .images__info{
+        width: 100%;
+        border-radius: 16px;
+        text-align: center;
+    }
+
+    /* Section Three */
+
     .sectionFive p {
         font-size: 10px;
     }
@@ -727,6 +803,11 @@ footer .btn-social {
     .sectionOne__element2{
         font-size: 10px;
 }
+.images__man {
+    width: 40vh;
+    
+    
+}
 }
 
 
@@ -744,52 +825,38 @@ footer .btn-social {
     li a {
         font-size: 18px;
     }
+
+    /* Section One */
     .sectionOne {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 35vh;
+        height: 55vh;
     }
     .images__man {
-        width: 170px;
+        width: 55vh;
+        top: 90px;
     }
+
+    .element1__info {
+        font-size: 3rem;
+        margin-bottom: .5em;
+    }
+
+    .sectionOne__element2{
+        align-items: center
+    }
+
+    /* Section One */
+
     /* Section three */
-    .sectionThree {
-        display: flex;
-        height: auto;
-        width: 100%
+    .containerSec3 {
+        justify-content: flex-start;
     }
-    .sectionThree__images {
-        width: 100%
-    }
-    .images__info {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        align-items: center;
-    }
-    .info_title {
-        display: flex;
-        width: 100%;
-    }
-    .sec3Text {
-        max-width: 100%;
-        padding-top: 3em;
-    }
-    .imgCard {
-        min-width: 124px;
-    }
-    .containerSec2 {
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        align-items: center;
-        height: auto;
-        justify-content: center;
-    }
+
     .cardcontainer {
-        margin: 3em;
+        margin: 8px;
+        margin-bottom: 4em;
     }
     .information__text1 {
         font-size: 12px;
@@ -800,7 +867,7 @@ footer .btn-social {
     /* Section three */
 }
 
-@media only screen and (min-width: 1201px) and (max-width: 1800px) {
+@media only screen and (min-width: 1201px)  {
     .navbar {
         position: relative;
         display: flex;
@@ -826,16 +893,38 @@ footer .btn-social {
     li a {
         font-size: 18px;
     }
+
     /* Section One */
+
     .sectionOne {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 38vh;
+        height: 67vh;
     }
+
+    .sectionOne__element1 {
+        width: 50%;
+        margin-left: 3.8em;
+        margin-bottom: 10em;
+    }
+
+    .element1__info {
+        font-size: 3.5rem;
+        margin-bottom: .5em;
+    }
+
+    .sectionOne__element2{
+        align-items: center
+    }
+
     .images__man {
-        width: 170px;
+        width: 67vh;
+        top: 90px;
     }
+
+    /* Section One */
+
     /* Section three */
     .sectionThree {
         display: flex;
@@ -863,7 +952,7 @@ footer .btn-social {
     .imgCard {
         min-width: 124px;
     }
-    .containerSec2 {
+    .containerSec3 {
         display: flex;
         position: relative;
         flex-direction: row;
@@ -872,8 +961,10 @@ footer .btn-social {
         justify-content: center;
     }
     .cardcontainer {
-        margin: 3em;
+        margin: 1px;
+        margin-bottom: 4em;
     }
+
     /* Section three */
 }
 
