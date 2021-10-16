@@ -40,11 +40,6 @@ body {
     width: 100%;
 }
 
-.logo a {
-    font-size: var(--font-24);
-    font-weight: var(--font-bold);
-}
-
 a {
     padding: 0px;
 }
@@ -100,15 +95,17 @@ li a {
     margin-bottom: 0px;
     height: 36px;
     font-family: var(--title-black);
-}
-
-.navbar li, a {
-    padding-left: 10px;
-}
-
-.navbar-dark {
     background-color: var(--blue-light);
-    width: 100%;
+}
+
+.logo{
+    font-size: var(--font-24);
+    font-weight: var(--font-bold);
+    color: var(--dark-blue);
+}
+
+.navbar-light .navbar-brand{
+    color: var(--dark-blue);
 }
 
 .dropdown-toggle::after {
@@ -615,10 +612,6 @@ li a {
     font-size: 12px;
 }
 
-.navbar-nav {
-    display: flex;
-    background-color: var(--nav-color);
-}
 
 /* Media Queries */
 
