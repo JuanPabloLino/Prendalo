@@ -40,11 +40,6 @@ body {
     width: 100%;
 }
 
-.logo a {
-    font-size: var(--font-24);
-    font-weight: var(--font-bold);
-}
-
 a {
     padding: 0px;
 }
@@ -98,17 +93,28 @@ li a {
 .navbar {
     padding: 0px;
     margin-bottom: 0px;
-    height: 36px;
-    font-family: var(--title-black);
-}
-
-.navbar li, a {
-    padding-left: 10px;
-}
-
-.navbar-dark {
+    
     background-color: var(--blue-light);
-    width: 100%;
+}
+.nav-link , .navbar-light .navbar-toggler{
+      color: var(--dark-blue);
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+    color: var(--dark-blue);
+}
+
+
+
+.logo {
+    font-size: var(--font-24);
+    font-weight: var(--font-bold);
+    color: var(--dark-blue);
+}
+
+.navbar-light .navbar-brand {
+    color: var(--dark-blue);
 }
 
 .dropdown-toggle::after {
@@ -145,13 +151,12 @@ li a {
     text-align: initial;
     color: var(--white);
     font-size: var(--title-white-font-size);
-    width: 50%;
-    margin-left: 4.3em;
-    margin-top: 1em;
+    
+    
 }
 
 .sectionOne__element1 b {
-    color: var(--dark-blue);
+ /*   color: var(--dark-blue);*/
 }
 
 .sectionOne__images {
@@ -369,7 +374,6 @@ li a {
     right: auto;
 }
 
-
 /* Section four */
 
 .sectionFour {
@@ -414,30 +418,26 @@ li a {
     justify-content: center;
     width: 100%;
     text-align: left;
-    
 }
 
-.sectionFour__information img  {
+.sectionFour__information img {
     width: 550px;
     position: absolute;
     z-index: -1;
-    top: 141%;    
+    top: 141%;
     left: 21.5%;
     bottom: auto;
-    
 }
+
 .informationElements__information {
     margin-right: 9em;
     margin-top: 1em;
-    background-image: url('../Images/mano.jpeg') ;
+    background-image: url('../Images/mano.jpeg');
     background-size: cover;
-
-    padding-bottom:100px;
-    width: 100%;        
+    padding-bottom: 100px;
+    width: 100%;
     overflow: hidden;
-    
     position: absolute;
-    
 }
 
 .informationElements__information2 {
@@ -449,7 +449,6 @@ li a {
     border-radius: 16px;
     opacity: 1;
     width: 7.5em;
-    
 }
 
 .informationElements__information3 {
@@ -483,9 +482,10 @@ li a {
     font-size: 10px;
 }
 
-.info__mano{ 
-    position:absolute;
+.info__mano {
+    position: absolute;
 }
+
 .sectionFour__button {
     background-color: var(--orange);
     color: var(--white);
@@ -496,7 +496,6 @@ li a {
 /* Section four */
 
 /* Section five */
-
 
 .sectionFive b {
     font-size: 40px;
@@ -539,15 +538,13 @@ li a {
 
 .sectionSix {
     background-color: var(--blue-light);
-    height: 438px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .sectionSix__elements {
-    display: flex;
-    height: 238px;
     margin: 3em;
 }
 
@@ -558,19 +555,26 @@ li a {
     justify-content: space-around;
     background-color: var(--white);
     border-radius: 12px;
+    width: 518px;
+    height: 238px;
+    padding-bottom: 1em;
 }
 
 .sectionSix__title {
-    color: var(--blue-light)
+    color: var(--yellow)
 }
 
 .sectionSix__info {
     color: var(--dark-blue);
+    font-weight: var(--font-medium);
+    text-align: justify;
+    justify-content: center;
+    align-self: center;
 }
 
 .sectionSix__button {
-    background-color: var(--orange);
-    color: var(--white);
+    background-color: var(--yellow);
+    color: var(--dark-blue);
     border-radius: 32px;
     font-weight: var(--font-bold);
 }
@@ -580,20 +584,20 @@ li a {
 /* Section seven */
 
 .sectionSeven {
-    background-color: var(--yellow);
-    height: 240px;
+    background-color: var(--dark-blue);
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .sectionSeven b {
-    color: var(--dark-blue);
+    color: var(--white);
     font-size: 40px;
 }
 
 .sectionSeven p {
-    color: var(--dark-blue);
+    color: var(--white);
     font-size: 16px;
 }
 
@@ -606,7 +610,7 @@ li a {
     justify-content: center;
     color: var(--white);
     background-color: var(--orange);
-    height: 64px;
+    height: 5vh;
     font-size: 24px;
 }
 
@@ -615,9 +619,13 @@ li a {
     font-size: 12px;
 }
 
-.navbar-nav {
-    display: flex;
-    background-color: var(--nav-color);
+footer .btn-social {
+    border-radius: 50%;
+    background-color: white;
+}
+
+.btn-outline-light {
+    color: var(--dark-blue);
 }
 
 /* Media Queries */
@@ -642,10 +650,85 @@ li a {
     #carousel {
         display: block;
     }
-    .sectionFive b{
+    .sectionFive b {
         font-size: 16px;
     }
+    .elements__1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--white);
+        border-radius: 12px;
+        width: 228px;
+        height: 118px;
+        font-size: 12px;
+    }
+    .elements__1 button {
+        font-size: 10px;
+    }
+    .sectionSeven b {
+        font-size: 16px;
+    }
+    .sectionSeven p {
+        font-size: 10px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+    .footer p {
+        font-size: 6px;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 50px; /* adjust to height of navbar */
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 45%;
+        height: 100%;
+        background-color: var(--blue-light);
+        
+    }
+
+    .navbar-collapse a{color:white
+        
+    }
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 800ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 800ms ease-in-out;
+    }
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+    .sectionOne__element1, element1__text2{
+        font-size: 21px;
+        width: 100%;
+    }
+
+    .sectionOne__element1{
+    flex-direction: column;
+    }
+    .sectionOne__element2{
+        font-size: 10px;
 }
+}
+
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
     .navbar {
@@ -723,7 +806,7 @@ li a {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         height: 36px;
         padding: 0px;
         margin-bottom: 0px;
