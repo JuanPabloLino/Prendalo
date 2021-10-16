@@ -221,7 +221,15 @@ li a {
     color: var(--dark-blue);
     text-align: center;
     font-size: 32px;
-    font-weight: var(--font-bold);
+    
+}
+
+.sectionTwo h2{
+    font-weight: var(--font-black);
+}
+
+.sectionTwo__text{
+    color: var(--green-light);
 }
 
 /* Section Two */
@@ -239,8 +247,9 @@ li a {
 
 .sectionThree__images {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin: auto;
+    width: inherit;
 }
 
 .sectionThree__images h3 {
@@ -253,7 +262,7 @@ li a {
     display: flex;
     align-items: flex-end;
     padding: 10px;
-    width: auto;
+    width: 100%;
 }
 
 .ImagenPrueba {
@@ -266,7 +275,7 @@ li a {
 }
 
 .imgCard {
-    width: 162px;
+    width: 194px;
     height: 298px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 9px #0000004D;
@@ -285,6 +294,13 @@ li a {
     letter-spacing: 0px;
 }
 
+.containerSec3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
 .sec3CardImg {
     padding: auto;
     margin: auto;
@@ -292,6 +308,7 @@ li a {
 
 .sec3CardImg img {
     width: 100%;
+    border-radius: 16px;
 }
 
 .cardcontainer {
@@ -426,11 +443,9 @@ li a {
     margin-top: 1em;
     background-image: url('../Images/mano.jpeg') ;
     background-size: cover;
-
     padding-bottom:100px;
-    width: 100%;        
+    width: 100%;
     overflow: hidden;
-    
     position: absolute;
     
 }
@@ -671,6 +686,25 @@ li a {
 
     /* Section One */
 
+    /* Section Three */
+    .containerSec3{
+        justify-content: flex-start;
+        width: 216px;
+    }
+
+    .sectionThree__images h3{
+        font-size: 25px;
+        
+    }
+
+    .images__info{
+        width: 100%;
+        border-radius: 16px;
+        text-align: center;
+    }
+
+    /* Section Three */
+
     .sectionFive p {
         font-size: 10px;
     }
@@ -683,6 +717,8 @@ li a {
     .sectionFive b{
         font-size: 16px;
     }
+
+
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
@@ -724,42 +760,13 @@ li a {
     /* Section One */
 
     /* Section three */
-    .sectionThree {
-        display: flex;
-        height: auto;
-        width: 100%
+    .containerSec3 {
+        justify-content: flex-start;
     }
-    .sectionThree__images {
-        width: 100%
-    }
-    .images__info {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        align-items: center;
-    }
-    .info_title {
-        display: flex;
-        width: 100%;
-    }
-    .sec3Text {
-        max-width: 100%;
-        padding-top: 3em;
-    }
-    .imgCard {
-        min-width: 124px;
-    }
-    .containerSec2 {
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        align-items: center;
-        height: auto;
-        justify-content: center;
-    }
+
     .cardcontainer {
-        margin: 3em;
+        margin: 8px;
+        margin-bottom: 4em;
     }
     .information__text1 {
         font-size: 12px;
@@ -855,7 +862,7 @@ li a {
     .imgCard {
         min-width: 124px;
     }
-    .containerSec2 {
+    .containerSec3 {
         display: flex;
         position: relative;
         flex-direction: row;
@@ -864,8 +871,10 @@ li a {
         justify-content: center;
     }
     .cardcontainer {
-        margin: 3em;
+        margin: 1px;
+        margin-bottom: 4em;
     }
+
     /* Section three */
 }
 
