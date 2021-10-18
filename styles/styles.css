@@ -139,11 +139,14 @@ li a {
     font-size: 3.33vw;
     font-weight: var(--font-bold);
     width: 100%;
-    height: 80vh;
+    height: 48vh;
+    
 }
 
 
-
+.btn{
+    background-color: var(--orange);
+}
 .sectionOne__element1 {
     display: flex;
     flex-direction: column;
@@ -525,6 +528,7 @@ li a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
 }
 
 .sectionFive__element img {
@@ -826,10 +830,10 @@ footer .btn-social {
 
     /* Section One */
     .sectionOne {
-        font-size: 21px;
+        font-size: 64px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 55vh;
+        height: 40vh;
     }
     .images__man {
         width: 55vh;
@@ -895,10 +899,10 @@ footer .btn-social {
     /* Section One */
 
     .sectionOne {
-        font-size: 21px;
+        font-size: 64px;
         font-weight: var(--font-bold);
-        width: 100%;
-        height: 67vh;
+        
+        
     }
 
     .sectionOne__element1 {
