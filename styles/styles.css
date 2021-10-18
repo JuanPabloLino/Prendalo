@@ -344,12 +344,11 @@ li a {
 
 #carousel {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     display: none;
     overflow: hidden;
     position: relative;
     margin: auto;
-    /*background: black;*/
     background-size: 100%;
 }
 
@@ -391,108 +390,128 @@ li a {
 
 .sectionFour {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 50vh;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
     text-align: center;
     padding: 0;
+    /* background-image: url(../Images/mano.jpeg); */
+    /* background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.informationElements{
+    display: flex;
+    background-image: url(../Images/mano.jpeg);
+    background-size: cover;
+    width: 45rem;
+    height: auto;
+    
+}
+
+.informationElements2{
+    display: flex;
+    width: auto;
+    align-items: center;
+    position: relative;
+    top: -1rem;
+    left: 6rem;
 }
 
 .sectionFour__elements {
     display: flex;
-    height: 50vh;
+    width: 100%;
+    height: 82vh;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .elements__image {
     position: relative;
-    /*width: 650px;*/
     min-width: 50%;
     height: 465px;
     min-width: 20%;
     z-index: 0;
 }
 
-.elements__image img {
-    width: 100%;
-}
-
 .sectionFour__title {
     color: var(--orange);
     font-weight: var(--font-bold);
     font-size: 25px;
-    margin-top: 2em;
+    margin-top: 1em;
     z-index: 1;
 }
 
 .sectionFour__information {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
+    height: 100%;
     text-align: left;
 }
 
-.sectionFour__information img {
-    width: 550px;
-    position: absolute;
-    z-index: -1;
-    top: 141%;
-    left: 21.5%;
-    bottom: auto;
-}
-
 .informationElements__information {
-    margin-right: 9em;
-    margin-top: 1em;
-    background-image: url('../Images/mano.jpeg');
-    background-size: cover;
-    padding-bottom: 100px;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
+    position: relative;
+    top: 8rem;
+    display: flex;
+    flex-direction: column;
+    left: 20rem;
 }
 
 .informationElements__information2 {
     margin-right: 8em;
-    height: 240px;
-    padding: 15px;
+    height: 20rem;
+    padding: 1rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 9px #00000080;
     border-radius: 16px;
     opacity: 1;
-    width: 7.5em;
+    width: 10.5rem;
 }
 
 .informationElements__information3 {
-    height: 240px;
-    padding: 15px;
+    height: 20rem;
+    padding: 1rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 9px #00000080;
     border-radius: 16px;
     opacity: 1;
-    width: 7.5em;
-}
-
-.informationElements {
-    display: flex;
-    /* top: 95em;*/
-    right: 63em;
+    width: 10.5rem;
 }
 
 .information__text1 {
     font-weight: var(--font-bold);
     color: var(--orange);
-    font-size: 15px;
-    width: 90px;
+    font-size: 1.2rem;
+    width: 6.5rem;
     text-align: left;
 }
 
 .information__text2 {
-    color: var(--blue-light);
-    width: 90px;
+    color: var(--dark-blue);
+    width: 6.5rem;
     text-align: left;
-    font-size: 10px;
+    font-size: 1rem;
+}
+
+.information2__text1 {
+    font-weight: var(--font-bold);
+    color: var(--orange);
+    font-size: 1.2rem;
+    width: 6.5rem;
+    text-align: left;
+    margin-top: .9rem;
+}
+
+.information2__text2 {
+    color: var(--dark-blue);
+    text-align: left;
+    font-size: 1rem;
+    width: 6.5rem;
 }
 
 .info__mano {
@@ -504,6 +523,7 @@ li a {
     color: var(--white);
     font-weight: var(--font-bold);
     border-radius: 32px;
+    width: 18em;
 }
 
 /* Section four */
@@ -655,6 +675,7 @@ footer .btn-social {
         height: 48vh;
     }
     .images__man {
+        display: none;
         width: 100%;
         
     }
@@ -708,7 +729,6 @@ footer .btn-social {
 
     .sectionThree__images h3{
         font-size: 25px;
-        
     }
 
     .images__info{
@@ -721,12 +741,6 @@ footer .btn-social {
 
     .sectionFive p {
         font-size: 10px;
-    }
-    .sectionFour {
-        display: none;
-    }
-    #carousel {
-        display: block;
     }
     .sectionFive b {
         font-size: 16px;
@@ -768,11 +782,10 @@ footer .btn-social {
         width: 45%;
         height: 100%;
         background-color: var(--blue-light);
-        
     }
 
     .navbar-collapse a{color:white
-        
+
     }
     .navbar-collapse.collapsing {
         left: -75%;
@@ -806,12 +819,49 @@ footer .btn-social {
         font-size: 10px;
 }
 .images__man {
+    display: none;
     width: 40vh;
-    
-    
-}
 }
 
+/* Section Four */
+.informationElements{
+    display: none;
+}
+#carousel {
+    display: block;
+}
+
+.carousel p{
+    width: 12vh;
+}
+
+.carousel-container{
+    top: 14%;
+    left: 42%;
+    width: 23%;
+    right: auto;
+}
+
+.information2__text1 {
+    font-size: 1.4vh;
+    width: 13vh;
+    margin-top: .5vh;
+}
+.information2__text2 {
+    font-size: 1.2vh;
+    width: 100%;
+}
+.information__text1 {
+    font-size: 1.5vh;
+    width: 9vh;
+    margin-top: .5vh;
+}
+.information__text2 {
+    width: 10.6vh;
+    font-size: 1.5vh;
+}
+/* Section Four */
+}
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
     .navbar {
@@ -836,6 +886,7 @@ footer .btn-social {
         height: 40vh;
     }
     .images__man {
+        display: none;
         width: 55vh;
         top: 90px;
     }
@@ -867,6 +918,71 @@ footer .btn-social {
         font-size: 10px;
     }
     /* Section three */
+
+    /* Section Four */
+
+    .sectionFour__elements {
+        height: 72vh;
+    }
+
+    .sectionFour__information {
+        width: 100%;
+    }
+
+    .informationElements__information {
+        left: 32vh;
+    }
+    .informationElements {
+        width: 50%;
+        height: 54vh;
+    }
+    .informationElements2 {
+        width: 50%;
+        height: 76vh;
+    }
+    .information__text1 {
+        font-size: 1.4vh;
+        width: 9vh;
+    }
+    .information__text2 {
+        width: 10.6vh;
+        font-size: 1.2vh;
+    }
+
+    .informationElements__information {
+        top: 14vh;
+    }
+
+    .informationElements2 {
+        top: -14vh;
+        left: 4vh;
+    }
+    .informationElements__information2 {
+        margin-right: 6vh;
+        position: relative;
+        height: 28vh;
+        width: 15vh;
+        top: 10vh;
+        left: 40vh;
+    }
+    .information2__text1 {
+        font-size: 1.4vh;
+        width: 13vh;
+    }
+    .information2__text2 {
+        font-size: 1.2vh;
+        width: 100%;
+    }
+
+    .informationElements__information3 {
+        position: relative;
+        height:28vh;
+        width: 15vh;
+        top: 10vh;
+        left: 40vh;
+    }
+
+    /* Section Four */
 }
 
 @media only screen and (min-width: 1201px)  {
@@ -901,8 +1017,6 @@ footer .btn-social {
     .sectionOne {
         font-size: 64px;
         font-weight: var(--font-bold);
-        
-        
     }
 
     .sectionOne__element1 {
@@ -921,6 +1035,7 @@ footer .btn-social {
     }
 
     .images__man {
+        display: none;
         width: 67vh;
         top: 90px;
     }
@@ -968,6 +1083,74 @@ footer .btn-social {
     }
 
     /* Section three */
+
+    /* Section Four */
+
+    .sectionFour{
+        height: 90vh;
+    }
+
+    .sectionFour__elements {
+        height: 80vh;
+    }
+
+    .sectionFour__information {
+        width: 100%;
+    }
+
+    .informationElements__information {
+        left: 42vh;
+    }
+    .informationElements {
+        width: 70vh;
+    }
+    .informationElements2 {
+        width: 50%;
+        height: 76vh;
+    }
+    .information__text1 {
+        font-size: 2vh;
+        width: 14vh;
+    }
+    .information__text2 {
+        width: 14vh;
+        font-size: 1.6vh;
+    }
+
+    .informationElements__information {
+        top: 17vh;
+    }
+
+    .informationElements2 {
+        top: -13vh;
+        left: 4vh;
+    }
+    .informationElements__information2 {
+        margin-right: 6vh;
+        position: relative;
+        height: 37vh;
+        width: 17vh;
+        top: 14vh;
+        left: 55vh;
+    }
+    .information2__text1 {
+        font-size: 2vh;
+        width: 13vh;
+    }
+    .information2__text2 {
+        font-size: 1.6vh;
+        width: 100%;
+    }
+
+    .informationElements__information3 {
+        position: relative;
+        height: 37vh;
+        width: 17vh;
+        top: 14vh;
+        left: 55vh;
+    }
+
+    /* Section Four */
 }
 
 /* Media Queries */
