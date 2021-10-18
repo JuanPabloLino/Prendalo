@@ -129,7 +129,6 @@ li a {
 /* Navbar */
 
 /* Section One */
-
 .sectionOne {
     display: flex;
     flex-direction: column;
@@ -139,26 +138,35 @@ li a {
     font-size: 3.33vw;
     font-weight: var(--font-bold);
     width: 100%;
-    height: 48vh;
-    
+    height: 80vh;
 }
 
-
-.btn{
-    background-color: var(--orange);
+.images__man {
+    position: relative;
+    z-index: 1;
 }
+
+.images__redCar{
+    position: relative;
+    z-index: 0;
+}
+
 .sectionOne__element1 {
     display: flex;
     flex-direction: column;
-    align-items: fleximages__man-start;
+    align-items: flex-start;
     justify-content: center;
     text-align: initial;
     color: var(--white);
     font-size: var(--title-white-font-size);
-    
-    
+    width: 50%;
+    margin-left: 8.6vh;
+    margin-top: 10vh;
 }
 
+.sectionOne__element1 b {
+    color: var(--dark-blue);
+}
 .sectionOne__images {
     display: flex;
     justify-content: flex-end;
@@ -167,28 +175,10 @@ li a {
     top: 0;
 }
 
-.imagen1 {
-    width: 100%;
-    max-width: 37.34vw;
-    height: auto;
-}
-
-/* .imagen1::after{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5)
-} */
-
-.imagen2 {
-    position: absolute;
-    width: 30%;
-    height: 275px;
-}
-
 .sectionOne__element2 {
     display: flex;
     align-items: flex-end;
 }
-
 .sectionOne__element2 p {
     display: flex;
     font-size: 16px;
@@ -196,24 +186,20 @@ li a {
     color: var(--dark-blue);
     margin-left: 25px;
 }
-
 .element2__button {
     background-color: var(--orange);
     border-radius: 32px;
     width: 162px;
     height: 48px;
 }
-
 .element2__button {
     font-size: 16px;
     color: var(--letter-white-color);
     border: 0;
 }
-
 .fontgreen {
     color: var(--green-light)
 }
-
 /* Section One */
 
 /* Section Two */
@@ -227,7 +213,6 @@ li a {
     color: var(--dark-blue);
     text-align: center;
     font-size: 32px;
-    
 }
 
 .sectionTwo h2{
@@ -672,14 +657,27 @@ footer .btn-social {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 48vh;
-    }
-    .images__man {
-        display: none;
-        width: 100%;
-        
+        height: 57vh;
     }
 
+.sectionOne__images{
+    justify-content: center;
+}
+
+    .images__man {
+        width: 34vh;
+    height: auto;
+    left: 53.5vh;
+    top: 6vh;
+    }
+
+    .images__redCar{
+        width: 50vh;
+    height: auto;
+    left: -0.5vh;
+    top: 3vh;
+    }
+    
     .sectionOne__element1{
         display: flex;
         flex-direction: column;
@@ -807,7 +805,7 @@ footer .btn-social {
     .hero{
         flex-direction: column;
     }
-    .sectionOne__element1, element1__text2{
+    .sectionOne__element1{
         font-size: 21px;
         width: 100%;
     }
@@ -818,16 +816,13 @@ footer .btn-social {
     .sectionOne__element2{
         font-size: 10px;
 }
-.images__man {
-    display: none;
-    width: 40vh;
-}
 
 /* Section Four */
 .informationElements{
     display: none;
 }
 #carousel {
+    width: 60vh;
     display: block;
 }
 
@@ -880,20 +875,33 @@ footer .btn-social {
 
     /* Section One */
     .sectionOne {
-        font-size: 64px;
+        font-size: 1vh;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 40vh;
+        height: 55vh;
     }
+
+    .sectionOne__element1 {
+        width: 50%;
+    margin-left: 3.4vh;
+    margin-bottom: 32vh;
+    }
+    
     .images__man {
-        display: none;
-        width: 55vh;
-        top: 90px;
+        width: 37vh;
+        top: 20vh;
+        left: 71vh;
+    }
+
+    .images__redCar{
+        width: 70vh;
+        left: 1vh;
+        top: 17vh;
     }
 
     .element1__info {
-        font-size: 3rem;
-        margin-bottom: .5em;
+        font-size: 6vh;
+        margin-bottom: 1vh;
     }
 
     .sectionOne__element2{
@@ -1015,19 +1023,21 @@ footer .btn-social {
     /* Section One */
 
     .sectionOne {
-        font-size: 64px;
+        font-size: 21px;
         font-weight: var(--font-bold);
+        width: 100%;
+        height: 67vh;
     }
 
     .sectionOne__element1 {
         width: 50%;
-        margin-left: 3.8em;
-        margin-bottom: 10em;
+        margin-left: 12.4vh;
+        margin-bottom: 20vh;
     }
 
     .element1__info {
-        font-size: 3.5rem;
-        margin-bottom: .5em;
+        font-size: 7vh;
+        margin-bottom: 1vh;
     }
 
     .sectionOne__element2{
@@ -1035,9 +1045,15 @@ footer .btn-social {
     }
 
     .images__man {
-        display: none;
         width: 67vh;
-        top: 90px;
+        top: 11vh;
+        left: 108vh;
+    }
+
+    .images__redCar{
+        width: 106vh;
+        left: -7vh;
+        top: 11vh;
     }
 
     /* Section One */
@@ -1064,7 +1080,7 @@ footer .btn-social {
     }
     .sec3Text {
         max-width: 100%;
-        padding-top: 3em;
+        padding-top: 6vh;
     }
     .imgCard {
         min-width: 124px;
