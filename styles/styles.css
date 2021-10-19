@@ -94,22 +94,21 @@ li a {
 
 /* Navbar */
 
+
 .navbar {
     padding: 0px;
     margin-bottom: 0px;
-    
     background-color: var(--blue-light);
 }
-.nav-link , .navbar-light .navbar-toggler{
-      color: var(--dark-blue);
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--dark-blue);
 }
 
 .navbar-collapse{
     justify-content: flex-end;
     color: var(--dark-blue);
 }
-
-
 
 .logo {
     font-size: var(--font-24);
@@ -382,16 +381,13 @@ li a {
     height: 50rem;
     text-align: center;
     padding: 0;
-    /* background-image: url(../Images/mano.jpeg); */
-    /* background-size: cover;
-    background-size: contain;
-    background-repeat: no-repeat; */
 }
 
 .informationElements{
     display: flex;
     background-image: url(../Images/mano.jpeg);
     background-size: cover;
+    background-repeat: no-repeat;
     width: 45rem;
     height: auto;
     
@@ -423,7 +419,7 @@ li a {
     z-index: 0;
 }
 
-.sectionFour__title {
+.title__element {
     color: var(--orange);
     font-weight: var(--font-bold);
     font-size: 25px;
@@ -527,7 +523,7 @@ li a {
 }
 
 .sectionFive__element {
-    height: 35vh;
+    height: 45vh;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -772,31 +768,60 @@ footer .btn-social {
 
     .navbar-collapse {
         position: fixed;
-        top: 50px; /* adjust to height of navbar */
+        top: 0vh; /* adjust to height of navbar */
         left: 0;
-        padding-left: 15px;
-        padding-right: 15px;
         padding-bottom: 15px;
+        padding-top: 5vh;
         width: 45%;
         height: 100%;
-        background-color: var(--blue-light);
+        background-color: var(--dark-blue);
     }
 
-    .navbar-collapse a{color:white
-
+    .navbar-collapse__button{
+        padding-right: 2vh;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        color: var(--blue-light);
+        background-color: var(--dark-blue);
+        border-style: none;
     }
+
+    .navbar-light .navbar-nav .nav-link.active{
+        color: var(--white);
+    }
+
+    .navbar-light .navbar-toggler{
+        border-color: none;
+    }
+
+    .link__vip {
+        border-top : 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
     .navbar-collapse.collapsing {
         left: -75%;
         transition: height 0s ease;
     }
 
+    .nav-item{
+        margin-left: 0px;
+    }
+
     .navbar-collapse.show {
+        z-index: 2;
         left: 0;
         transition: left 800ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
     }
 
     .navbar-toggler.collapsed ~ .navbar-collapse {
         transition: left 800ms ease-in-out;
+        border-style: none;
     }
     .navbar {
         justify-content: flex-start;
@@ -818,6 +843,19 @@ footer .btn-social {
 }
 
 /* Section Four */
+
+.sectionFour{
+    justify-content: flex-start;
+}
+
+.sectionFour__title{
+    height: 40vh;
+}
+
+.title__element{
+    margin-bottom: -4em;
+}
+
 .informationElements{
     display: none;
 }
@@ -1005,8 +1043,9 @@ footer .btn-social {
         margin-bottom: 0px;
         height: 36px;
     }
-    .navbar li, a {
+    .navbar ul li a {
         padding: 0px;
+        color: green;
     }
     .logo a {
         font-size: px;
@@ -1142,7 +1181,8 @@ footer .btn-social {
         left: 4vh;
     }
     .informationElements__information2 {
-        margin-right: 6vh;
+        margin-right: 21vh;
+        margin-left: 12vh;
         position: relative;
         height: 37vh;
         width: 17vh;
