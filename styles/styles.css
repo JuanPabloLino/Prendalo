@@ -656,7 +656,6 @@ footer .btn-social {
 
 @media only screen and (max-width: 800px) {
 
-
     .header{
         height: 11vh;
     }
@@ -743,7 +742,7 @@ footer .btn-social {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 57vh;
+        height: 63vh;
     }
 
 .sectionOne__images{
@@ -752,9 +751,9 @@ footer .btn-social {
 
     .images__man {
         width: 34vh;
-    height: auto;
-    left: 50.5vh;
-    top: 6vh;
+        height: auto;
+        left: 50.5vh;
+        top: 6vh;
     }
 
     .images__redCar{
@@ -823,12 +822,7 @@ footer .btn-social {
 
     /* Section Three */
 
-    .sectionFive p {
-        font-size: 10px;
-    }
-    .sectionFive b {
-        font-size: 16px;
-    }
+
     .elements__1 {
         display: flex;
         flex-direction: column;
@@ -844,16 +838,17 @@ footer .btn-social {
         font-size: 10px;
     }
     .sectionSeven b {
-        font-size: 16px;
+        font-size: 6vh;
     }
     .sectionSeven p {
-        font-size: 10px;
+        font-size: 3vh;
     }
     .footer {
-        font-size: 12px;
+        font-size: 2vh;
+        height: 20vh;
     }
     .footer p {
-        font-size: 6px;
+        font-size: 1.5vh;
     }
 
     
@@ -877,6 +872,7 @@ footer .btn-social {
 
 .sectionFour{
     justify-content: flex-start;
+    height: 90vh;
 }
 
 .sectionFour__title{
@@ -906,6 +902,14 @@ footer .btn-social {
     right: auto;
 }
 
+.carousel-control-next{
+    right: 10vh;
+}
+
+.carousel-control-prev{
+    left: 13vh;
+}
+
 .information2__text1 {
     font-size: 1.4vh;
     width: 13vh;
@@ -929,6 +933,51 @@ footer .btn-social {
     margin-top: 5vh;
 }
 /* Section Four */
+
+/* Section Five */
+
+.sectionFive__element{
+    height: 35vh;
+}
+
+.sectionFive p {
+    font-size: 1.5vh;
+    width: 80%;
+    text-align:center;
+}
+.sectionFive b {
+    font-size: 1.8vh;
+}
+
+/* Section Five */
+
+/* Section Six */
+
+.sectionSix{
+    height: auto;
+}
+
+.elements__1{
+    height: auto;
+   
+}
+
+.elements__1 b{
+    margin: 2vh;
+}
+
+.elements__1 p{
+    text-align: left;
+    margin: 2vh;
+}
+
+.sectionSix__button{
+    height: 6vh;
+}
+
+
+/* Section Six */
+
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
@@ -1137,7 +1186,7 @@ footer .btn-social {
     .images__man {
         width: 67vh;
         top: 11vh;
-        left: 108vh;
+        left: 107vh;
     }
 
     .images__redCar{
