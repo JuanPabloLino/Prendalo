@@ -237,6 +237,7 @@ li a {
 
 .sectionTwo h2 {
     font-weight: var(--font-black);
+    font-size: 4.5vh;
 }
 
 .sectionTwo__text {
@@ -333,6 +334,11 @@ li a {
     margin: auto;
 }
 
+.images__infoMobile{
+    display: none;
+    text-align: center;
+}
+
 /* Section three */
 
 #carousel .carousel, #carousel .carousel-inner, #carousel .carousel-item, #carousel .carousel-item::before {
@@ -346,7 +352,7 @@ li a {
 
 #carousel {
     width: 100%;
-    height: 45vh;
+    height: 35vh;
     display: none;
     overflow: hidden;
     position: relative;
@@ -807,9 +813,13 @@ footer .btn-social {
     }
     /* Section One */
     /* Section Three */
+
+    .sectionThree{
+        height: 73vh;
+    }
     .containerSec3 {
         justify-content: flex-start;
-        width: 30vh;
+        width: 29vh;
     }
     .sectionThree__images h3 {
         font-size: 25px;
@@ -819,6 +829,13 @@ footer .btn-social {
         border-radius: 16px;
         text-align: center;
     }
+
+    .images__infoMobile{
+        display: flex;
+        color: var(--dark-blue);
+        font-weight: var(--font-bold);
+    }
+
     /* Section Three */
     .elements__1 {
         display: flex;
@@ -863,13 +880,15 @@ footer .btn-social {
     /* Section Four */
     .sectionFour {
         justify-content: flex-start;
-        height: 90vh;
+        height: 60vh;
     }
-    .sectionFour__title {
-        height: 40vh;
+
+    .sectionFour__elements{
+        height: 59vh;
     }
+
     .title__element {
-        margin-bottom: -4em;
+        margin-top: 2em;
     }
     .informationElements {
         display: none;
@@ -882,13 +901,13 @@ footer .btn-social {
         height: 44vh;
     }
     #carousel p {
-        width: 8.8vh;
+        width: 7.5vh;
     }
     .carousel-container {
-        top: 11vh;
-        left: 27vh;
-        width: 8vh;
-        right: auto;
+        top: 33%;
+    left: 27vh;
+    width: 5vh;
+    right: auto;
     }
     .carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300355b' viewBox='0 0 10 10'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -896,8 +915,8 @@ footer .btn-social {
     .carousel-control-next-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300355b' viewBox='0 0 10 10'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
     }
-    .carousel-control-prev {
-        left: 10vh;
+    .carousel-control-next {
+        right: 8vh;
     }
     .carousel-control-prev {
         left: 10vh;
@@ -912,15 +931,14 @@ footer .btn-social {
         width: 100%;
     }
     .information__text1 {
-        font-size: 1.1vh;
-        width: 9vh;
+        font-size: 1vh;
+        width: 8vh;
         margin-top: 0.5vh;
     }
     .information__text2 {
-        width: 10.6vh;
-        font-size: 1.2vh;
+        width: 8vh;
+        font-size: 1vh;
     }
- 
     /* Section Four */
     /* Section Five */
     .sectionFive__element {
@@ -950,12 +968,8 @@ footer .btn-social {
         text-align: center;
         margin: 2vh;
     }
-    
-
-    .
     /* Section Six */
 }
-
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
     .header {
         height: 13vh;
@@ -1082,8 +1096,7 @@ footer .btn-social {
     }
     /* Section Four */
 }
-
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1201px) and (max-width:1589px) {
     .navbar {
         position: relative;
         display: flex;
@@ -1113,11 +1126,12 @@ footer .btn-social {
         margin-right: 10vh;
     }
     /* Section One */
+
     .sectionOne {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 67vh;
+        height: 85vh;
     }
     .sectionOne__element1 {
         width: 50%;
@@ -1132,14 +1146,14 @@ footer .btn-social {
         align-items: center;
     }
     .images__man {
-        width: 40vh;
-        top: 11vh;
-        left: 61vh;
+        width: 46vh;
+        top: 24vh;
+        left: 71vh;
     }
     .images__redCar {
-        width: 66vh;
-        left: -21vh;
-        top: 11vh;
+        width: 70vh;
+        left: -15vh;
+        top: 16vh;
     }
     /* Section One */
     /* Section three */
@@ -1193,7 +1207,7 @@ footer .btn-social {
         width: 100%;
     }
     .informationElements__information {
-        left: 40vh;
+        left: 43vh;
     }
     .informationElements {
         width: 70vh;
@@ -1242,6 +1256,136 @@ footer .btn-social {
         width: 20vh;
         top: 14vh;
         left: 55vh;
+    }
+    /* Section Four */
+}
+@media only screen and (min-width: 1590px){
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        height: 36px;
+        padding: 0px;
+        margin-bottom: 0px;
+        height: 36px;
+    }
+    .navbar ul li a {
+        padding: 0px;
+    }
+    .logo a {
+        font-size: px;
+        align-self: center;
+    }
+    li, a {
+        margin: 0px;
+        padding: 0px;
+    }
+    li a {
+        font-size: 18px;
+    }
+    .navbar-light .navbar-nav .nav-link.active {
+        margin-right: 10vh;
+    }
+
+
+    /* Section One */
+
+    .sectionOne {
+        font-size: 21px;
+        font-weight: var(--font-bold);
+        width: 100%;
+        height: 85vh;
+    }
+    .sectionOne__element1 {
+        width: 50%;
+        margin-left: 12.4vh;
+        margin-bottom: 20vh;
+    }
+    .element1__info {
+        font-size: 9vh;
+        margin-bottom: 1vh;
+    }
+    .sectionOne__element2 {
+        align-items: center;
+    }
+    .images__man {
+        width: 55vh;
+        top: 15vh;
+        left: 75vh;
+    }
+    .images__redCar {
+        width: 82vh;
+        left: -29vh;
+        top: 11vh;
+    }
+    /* Section One */
+
+    /* Section Four */
+    .sectionFour {
+        height: 110vh;
+    }
+    .sectionFour__elements {
+        height: 90vh;
+    }
+    .sectionFour__information {
+        width: 100%;
+    }
+.title__element{
+    font-size: 34px;
+}
+
+    .informationElements__information {
+        left: 49vh;
+    }
+    .informationElements {
+        width: 110vh;
+    }
+    .informationElements2 {
+        width: 50%;
+        height: 76vh;
+    }
+    .information__text1 {
+        font-size: 2.5vh;
+        width: 14vh;
+    }
+    .information__text2 {
+        width: 16vh;
+        font-size: 2vh;
+    }
+    .informationElements__information {
+        top: 19vh;
+    }
+    .informationElements2 {
+        top: -13vh;
+        left: 4vh;
+    }
+    .informationElements__information2 {
+        margin-right: 16vh;
+        margin-left: 12vh;
+        position: relative;
+        height: 43vh;
+        width: 23vh;
+        top: 16vh;
+        left: 55vh;
+    }
+    .information2__text1 {
+        font-size: 2.5vh;
+        width: 16vh;
+    }
+    .information2__text2 {
+        font-size: 2vh;
+        width: 100%;
+    }
+    .informationElements__information3 {
+        margin-right: 16vh;
+        position: relative;
+        height: 43vh;
+        width: 23vh;
+        top: 16vh;
+        left: 55vh;;
     }
     /* Section Four */
 }
