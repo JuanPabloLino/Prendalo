@@ -36,10 +36,6 @@
     margin: 0vh;
 }
 
-::-webkit-scrollbar {
-    overflow: hidden;
-}
-
 body {
     background-color: rgb(255, 255, 255);
     font-family: var(--body-font);
@@ -967,6 +963,10 @@ footer .btn-social {
     .elements__1 p {
         text-align: center;
         margin: 2vh;
+    }
+
+    .sectionFour__button {
+        height: 6vh;
     }
     /* Section Six */
 }
