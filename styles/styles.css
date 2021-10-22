@@ -686,6 +686,7 @@ footer .btn-social {
 /* Media Queries */
 
 @media only screen and (max-width: 800px) {
+
     .header {
         height: 11vh;
     }
@@ -758,7 +759,7 @@ footer .btn-social {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 60vh;
+        height: 58vh;
     }
     .sectionOne__images {
         justify-content: center;
@@ -826,6 +827,10 @@ footer .btn-social {
         text-align: center;
     }
 
+    .sectionThree__images h3 {
+        display: none;
+    }
+
     .images__infoMobile{
         display: flex;
         color: var(--dark-blue);
@@ -880,7 +885,7 @@ footer .btn-social {
     }
 
     .sectionFour__elements{
-        height: 59vh;
+        height: 100%;
     }
 
     .title__element {
@@ -891,19 +896,20 @@ footer .btn-social {
     }
     #carousel {
         width: 60vh;
+        height: 40vh;
         display: block;
     }
     .img_carousel {
         height: 44vh;
     }
     #carousel p {
-        width: 7.5vh;
+        width: 7.6vh;
     }
     .carousel-container {
-        top: 33%;
-    left: 27vh;
-    width: 5vh;
-    right: auto;
+        top: 27%;
+        left: 43%;
+        width: 16%;
+        right: auto;
     }
     .carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300355b' viewBox='0 0 10 10'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
@@ -918,22 +924,22 @@ footer .btn-social {
         left: 10vh;
     }
     .information2__text1 {
-        font-size: 1.1vh;
+        font-size: 1.2vh;
         width: 13vh;
         margin-top: 0.5vh;
     }
     .information2__text2 {
-        font-size: 1.2vh;
+        font-size: 1.1vh;
         width: 100%;
     }
     .information__text1 {
-        font-size: 1vh;
+        font-size: 1.2vh;
         width: 8vh;
         margin-top: 0.5vh;
     }
     .information__text2 {
         width: 8vh;
-        font-size: 1vh;
+        font-size: 1.1vh;
     }
     /* Section Four */
     /* Section Five */
@@ -1388,6 +1394,33 @@ footer .btn-social {
         left: 55vh;;
     }
     /* Section Four */
+}
+
+@media only screen and (min-height: 800px) and (max-height:825px){
+    .carousel-container {
+        top: 21%;
+        left: 44%;
+    }
+
+    .information2__text1 {
+        font-size: 1.1vh;
+        width: 13vh;
+        margin-top: 0.5vh;
+    }
+    .information2__text2 {
+        font-size: 1vh;
+        width: 100%;
+    }
+    .information__text1 {
+        font-size: 1.1vh;
+        width: 8vh;
+        margin-top: 0.5vh;
+    }
+    .information__text2 {
+        width: 8vh;
+        font-size: 1vh;
+    }
+
 }
 
 /* Media Queries */
