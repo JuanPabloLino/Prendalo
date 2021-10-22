@@ -36,7 +36,7 @@
 }
 
 ::-webkit-scrollbar{
-  display: none;
+  overflow: hidden;
 }
 
 body {
@@ -403,7 +403,7 @@ hover:focus {
 
 .informationElements {
   display: flex;
-  background-image: url(../Images/mano.jpeg);
+  background-image: url(../Images/mano_mobile.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 45rem;
@@ -541,7 +541,7 @@ hover:focus {
 }
 
 .sectionFive__element {
-  height: 54vh;
+  height: 58vh;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -873,71 +873,75 @@ footer .btn-social {
     font-size: 10px;
   }
 
-  /* Section Four */
+/* Section Four */
 
-  .sectionFour {
-    justify-content: flex-start;
-    height: 90vh;
-  }
+.sectionFour {
+  justify-content: flex-start;
+  height: 90vh;
+}
 
-  .sectionFour__title {
-    height: 40vh;
-  }
+.sectionFour__title {
+  height: 40vh;
+}
 
-  .title__element {
-    margin-bottom: -4em;
-  }
+.title__element {
+  margin-bottom: -4em;
+}
 
-  .informationElements {
-    display: none;
-  }
-  #carousel {
-    width: 60vh;
-    display: block;
-  }
+.informationElements {
+  display: none;
+}
+#carousel {
+  width: 60vh;
+  display: block;
+}
 
-  .carousel p {
-    width: 12vh;
-  }
+.img_carousel{
+  height: 44vh;
+}
 
-  .carousel-container {
-    top: 14%;
-    left: 42%;
-    width: 23%;
-    right: auto;
-  }
+#carousel p {
+  width: 8.8vh;
+}
 
-  .carousel-control-next {
-    right: 10vh;
-  }
+.carousel-container {
+  top: 11vh;
+  left: 27vh;
+  width: 8vh;
+  right: auto;
+}
 
-  .carousel-control-prev {
-    left: 13vh;
-  }
+.carousel-control-next {
+  right: 10vh;
+}
 
-  .information2__text1 {
-    font-size: 1.4vh;
-    width: 13vh;
-    margin-top: 0.5vh;
-  }
-  .information2__text2 {
-    font-size: 1.2vh;
-    width: 100%;
-  }
-  .information__text1 {
-    font-size: 1.5vh;
-    width: 9vh;
-    margin-top: 0.5vh;
-  }
-  .information__text2 {
-    width: 10.6vh;
-    font-size: 1.5vh;
-  }
+.carousel-control-prev {
+  left: 13vh;
+}
 
-  .sectionFour__button {
-    margin-top: 5vh;
-  }
-  /* Section Four */
+.information2__text1 {
+  font-size: 1.1vh;
+  width: 13vh;
+  margin-top: 0.5vh;
+}
+.information2__text2 {
+  font-size: 1.2vh;
+  width: 100%;
+}
+.information__text1 {
+  font-size: 1.1vh;
+  width: 9vh;
+  margin-top: 0.5vh;
+}
+.information__text2 {
+  width: 10.6vh;
+  font-size: 1.2vh;
+}
+
+.sectionFour__button {
+  margin-top: 5vh;
+}
+/* Section Four */
 
   /* Section Five */
 
