@@ -586,7 +586,7 @@ li a {
 }
 
 .sectionSix__elements {
-    margin: 3em;
+    margin: 0em;
 }
 
 .elements__1 {
@@ -603,6 +603,9 @@ li a {
 
 .sectionSix__title {
     color: var(--yellow);
+    font-size: var(--font-21);
+    
+
 }
 
 .sectionSix__info {
@@ -611,6 +614,7 @@ li a {
     text-align: justify;
     justify-content: center;
     align-self: center;
+    font-size: small;
 }
 
 .sectionSix__button {
@@ -626,7 +630,7 @@ li a {
 
 .sectionSeven {
     background-color: var(--dark-blue);
-    height: 40vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -634,12 +638,12 @@ li a {
 
 .sectionSeven b {
     color: var(--white);
-    font-size: 7vh;
+    font-size: 40px;
 }
 
 .sectionSeven p {
     color: var(--white);
-    font-size: 3vh;
+    font-size: 20px;
 }
 
 /* Section seven */
@@ -828,13 +832,13 @@ footer .btn-social {
         font-size: 12px;
     }
     .elements__1 button {
-        font-size: 10px;
+        font-size: 12px;
     }
     .sectionSeven b {
-        font-size: 6vh;
+        font-size: 21px;
     }
     .sectionSeven p {
-        font-size: 3vh;
+        font-size: 15px;
     }
     .footer {
         font-size: 2vh;
@@ -940,14 +944,15 @@ footer .btn-social {
     }
     .elements__1 b {
         margin: 2vh;
+        font-size: var(--font-18 );
     }
     .elements__1 p {
-        text-align: left;
+        text-align: center;
         margin: 2vh;
     }
-    .sectionSix__button {
-        height: 6vh;
-    }
+    
+
+    .
     /* Section Six */
 }
 
