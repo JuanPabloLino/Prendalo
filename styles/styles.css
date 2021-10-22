@@ -1396,7 +1396,7 @@ footer .btn-social {
     /* Section Four */
 }
 
-@media only screen and (min-height: 800px){
+@media only screen and (min-height: 800px) and (max-height:825px){
     .carousel-container {
         top: 21%;
         left: 44%;
