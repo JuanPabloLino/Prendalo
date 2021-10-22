@@ -826,6 +826,10 @@ footer .btn-social {
         text-align: center;
     }
 
+    .sectionThree__images h3 {
+        display: none;
+    }
+
     .images__infoMobile{
         display: flex;
         color: var(--dark-blue);
