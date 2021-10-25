@@ -939,6 +939,10 @@ footer .btn-social {
     }
     /* Section One */
 
+    .sectionTwo h2 {
+        font-size: 25px;
+    }
+
     .sectionTwo{
         margin-top: 2vh;
     }
@@ -982,7 +986,7 @@ footer .btn-social {
         font-size: 12px;
     }
     .sectionSeven b {
-        font-size: 21px;
+        font-size: 25px;
     }
     .sectionSeven p {
         font-size: 15px;
