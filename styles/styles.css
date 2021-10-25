@@ -337,11 +337,12 @@ li a {
     margin: auto;
 }
 
-.images__infoMobile{
+.images__infoMobile {
     display: none;
     text-align: center;
 }
-.images__infoMobile1 img{
+
+.images__infoMobile1 img {
     height: auto;
     width: 5vh;
     margin-top: 3vh;
@@ -530,8 +531,7 @@ li a {
     position: absolute;
 }
 
-
-.sectionFourBtnBack{
+.sectionFourBtnBack {
     background-color: var(--blue-light);
     height: 15vh;
     margin-bottom: 10vh;
@@ -541,9 +541,10 @@ li a {
     background-color: var(--orange);
     color: var(--white);
     font-weight: var(--font-bold);
-    border-radius: 32px;
+    border-radius: 4vh;
     width: 25vh;
-    height: 4vh;
+    height: 6vh;
+    font-size: 2vh;
 }
 
 /* Section four */
@@ -576,7 +577,7 @@ li a {
     width: 100%;
 }
 
-.sectionFive__link{
+.sectionFive__link {
     text-decoration: none;
     color: black;
 }
@@ -621,17 +622,18 @@ li a {
 
 .sectionSix__title {
     color: var(--yellow);
-    font-size: 3vh;
+    font-size: 35px;
     text-align: center;
 }
 
 .sectionSix__info {
     color: var(--dark-blue);
     font-weight: var(--font-medium);
-    align-self: center;
-    font-size: 1.8vh;
-    text-align: justify;
-    margin:1vh;
+    align-self: top;
+    font-size: 20px;
+    text-align: center;
+    height: 60px;
+    margin: 1vh;
 }
 
 .sectionSix__button {
@@ -700,13 +702,13 @@ footer .btn-social {
 
 /* Pestañas Calificacion-prestamo-gracias */
 
-.header__pestaña{
+.header__pestaña {
     height: 8vh;
     width: 100%;
-    background-color:var(--orange);
+    background-color: var(--orange);
     color: white;
     display: flex;
-    align-items:center;
+    align-items: center;
     align-content: center;
     justify-content: center
 }
@@ -716,14 +718,14 @@ footer .btn-social {
     font-size: 3vh;
 }
 
-.sectionSimulador{
+.sectionSimulador {
     display: flex;
     justify-content: center;
     height: 82vh;
-    background-color:var(--blue-light);
+    background-color: var(--blue-light);
 }
 
-.sectionSimulador__data{
+.sectionSimulador__data {
     width: 50%;
     text-align: center;
     display: flex;
@@ -741,39 +743,37 @@ footer .btn-social {
     font-size: 1.5vh;
 }
 
-.sectionGracias{
+.sectionGracias {
     display: flex;
     align-items: center;
     height: 82vh;
 }
 
-.sectionGracias__data{
+.sectionGracias__data {
     width: 75%;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
 
-.sectionGracias__image{
+.sectionGracias__image {
     height: 50vh;
     width: 50%;
     display: flex;
     justify-content: flex-start;
 }
 
-.redes__data{
+.redes__data {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 
 /* Pestañas Calificacion-prestamo-gracias */
 
 /* Media Queries */
 
 @media only screen and (max-width: 800px) {
-
     .header {
         height: 11vh;
     }
@@ -846,22 +846,33 @@ footer .btn-social {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 88vh;
+        height: 90vh;
     }
     .sectionOne__images {
         justify-content: center;
     }
     .images__man {
-        width: 22vh;
+        /* width: 22vh;
         height: auto;
         left: 48.5vh;
-        top: 19vh;
+        top: 19vh; */
+        width: 34vh;
+        height: auto;
+        left: 20%;
+        position: absolute;
+        top: 50vh;
+        ;
     }
     .images__redCar {
-        width: 36vh;
+        /* width: 36vh;
         height: auto;
         left: 5.5vh;
-        top: 15vh;
+        top: 15vh; */
+        width: 44vh;
+        height: auto;
+        left: 11.5vh;
+        display: none;
+        top: 4vh;
     }
     .sectionOne__element1 {
         display: flex;
@@ -871,12 +882,10 @@ footer .btn-social {
         margin-left: 0px;
         margin-top: 15vh;
     }
-
-    .link__vip3{
+    .link__vip3 {
         margin-left: 0px;
         margin-top: 1vh;
     }
-
     .element1__info {
         display: flex;
         flex-direction: column;
@@ -902,8 +911,7 @@ footer .btn-social {
     }
     /* Section One */
     /* Section Three */
-
-    .sectionThree{
+    .sectionThree {
         height: 73vh;
     }
     .containerSec3 {
@@ -918,17 +926,14 @@ footer .btn-social {
         border-radius: 16px;
         text-align: center;
     }
-
     .sectionThree__images h3 {
         display: none;
     }
-
-    .images__infoMobile{
+    .images__infoMobile {
         display: flex;
         color: var(--dark-blue);
         font-weight: var(--font-bold);
     }
-
     /* Section Three */
     .elements__1 {
         display: flex;
@@ -961,7 +966,7 @@ footer .btn-social {
         flex-direction: column;
     }
     .sectionOne__element1 {
-        font-size: 21px;
+        font-size: 40px;
         width: 100%;
     }
     .sectionOne__element1 {
@@ -975,11 +980,9 @@ footer .btn-social {
         justify-content: flex-start;
         height: 60vh;
     }
-
-    .sectionFour__elements{
+    .sectionFour__elements {
         height: 100%;
     }
-
     .title__element {
         margin-top: 2em;
     }
@@ -1056,32 +1059,30 @@ footer .btn-social {
     }
     .elements__1 b {
         margin: 2vh;
-        font-size: var(--font-18 );
+        font-size: var(--font-18);
     }
     .elements__1 p {
         text-align: center;
         margin: 2vh;
     }
-
     .sectionFour__button {
         height: 7vh;
     }
     /* Section Six */
-    .footer{
+    .footer {
         justify-content: flex-start;
-        height: 10vh;
+        height: 13vh;
     }
-
-    .sectionSix__elements{
+    .sectionSix__elements {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .elements__1{
+    .elements__1 {
         width: 80%;
     }
 }
+
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
     .header {
         height: 13vh;
@@ -1207,14 +1208,12 @@ footer .btn-social {
         left: 40vh;
     }
     /* Section Four */
-
-    .footer{
+    .footer {
         justify-content: flex-start;
         height: 13vh;
     }
-
-    
 }
+
 @media only screen and (min-width: 1201px) and (max-width:1589px) {
     .navbar {
         position: relative;
@@ -1245,7 +1244,6 @@ footer .btn-social {
         margin-right: 10vh;
     }
     /* Section One */
-
     .sectionOne {
         font-size: 21px;
         font-weight: var(--font-bold);
@@ -1378,8 +1376,8 @@ footer .btn-social {
     }
     /* Section Four */
 }
-@media only screen and (min-width: 1590px){
 
+@media only screen and (min-width: 1590px) {
     .navbar {
         position: relative;
         display: flex;
@@ -1408,10 +1406,7 @@ footer .btn-social {
     .navbar-light .navbar-nav .nav-link.active {
         margin-right: 10vh;
     }
-
-
     /* Section One */
-
     .sectionOne {
         font-size: 21px;
         font-weight: var(--font-bold);
@@ -1441,7 +1436,6 @@ footer .btn-social {
         top: 11vh;
     }
     /* Section One */
-
     /* Section Four */
     .sectionFour {
         height: 110vh;
@@ -1452,10 +1446,9 @@ footer .btn-social {
     .sectionFour__information {
         width: 100%;
     }
-    .title__element{
-    font-size: 34px;
+    .title__element {
+        font-size: 34px;
     }
-
     .informationElements__information {
         left: 49vh;
     }
@@ -1504,16 +1497,17 @@ footer .btn-social {
         height: 43vh;
         width: 23vh;
         top: 16vh;
-        left: 55vh;;
+        left: 55vh;
+        ;
     }
     /* Section Four */
 }
-@media only screen and (min-height: 800px) and (max-height:825px){
+
+@media only screen and (min-height: 800px) and (max-height:825px) {
     .carousel-container {
         top: 21%;
         left: 44%;
     }
-
     .information2__text1 {
         font-size: 1.1vh;
         width: 13vh;
@@ -1532,8 +1526,6 @@ footer .btn-social {
         width: 8vh;
         font-size: 1vh;
     }
-
 }
-
 
 /* Media Queries */
