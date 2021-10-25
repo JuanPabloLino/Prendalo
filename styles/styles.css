@@ -794,6 +794,11 @@ footer .btn-social {
     .header {
         height: 11vh;
     }
+
+    .li a {
+        text-align: initial;
+        margin-left: 1vh;
+    }
     /* NavBar */
     .navbar {
         display: flex;
@@ -826,6 +831,7 @@ footer .btn-social {
     .navbar-light .navbar-nav .nav-link.active {
         color: var(--white);
         margin-right: 0vh;
+        text-align: initial;
     }
     .navbar-light .navbar-toggler {
         border-color: none;
@@ -845,6 +851,7 @@ footer .btn-social {
         margin-left: 0px;
     }
     .navbar-collapse.show {
+        opacity: .9;
         z-index: 2;
         left: 0;
         transition: left 800ms ease-in-out;
@@ -854,9 +861,7 @@ footer .btn-social {
         align-items: stretch;
     }
 
-    .navbar-collapse.show ul{
-        justify-content: flex-start;
-        margin-right:2vh ;
+    .navbar-collapse.show a{
         width: 100% ;
     }
     .navbar-toggler.collapsed~.navbar-collapse {
