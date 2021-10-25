@@ -228,7 +228,13 @@ li a {
     color: white;
 }
 
-.sectionFour__button{
+.sectionSix__button a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    
+}
+
+.sectionFour__button {
     color: var(--letter-white-color);
 }
 
@@ -358,7 +364,6 @@ li a {
 
 .images__infoMobile1 img {
     display: none;
-    
 }
 
 /* Section three */
@@ -560,7 +565,7 @@ li a {
     font-size: 2vh;
 }
 
-.sectionFour__button a{
+.sectionFour__button a {
     color: white;
 }
 
@@ -794,7 +799,6 @@ footer .btn-social {
     .header {
         height: 11vh;
     }
-
     .li a {
         text-align: initial;
         margin-left: 1vh;
@@ -860,9 +864,8 @@ footer .btn-social {
         justify-content: flex-start;
         align-items: stretch;
     }
-
-    .navbar-collapse.show a{
-        width: 100% ;
+    .navbar-collapse.show a {
+        width: 100%;
     }
     .navbar-toggler.collapsed~.navbar-collapse {
         transition: left 800ms ease-in-out;
@@ -937,16 +940,14 @@ footer .btn-social {
         margin-top: 18px;
         font-size: 2vh;
     }
-
-    .redes{
+    .redes {
         padding-bottom: 3vh;
     }
     /* Section One */
-
     .sectionTwo h2 {
         font-size: 25px;
     }
-    .sectionTwo{
+    .sectionTwo {
         margin-top: 2vh;
     }
     /* Section Three */
@@ -1075,13 +1076,11 @@ footer .btn-social {
         width: 8vh;
         font-size: 1.1vh;
     }
-
-    .images__infoMobile1 img{
+    .images__infoMobile1 img {
         height: auto;
         width: 5vh;
         margin-top: 3vh;
-        display:block;
-        
+        display: block;
     }
     /* Section Four */
     /* Section Five */
@@ -1125,20 +1124,16 @@ footer .btn-social {
         flex-direction: column;
         align-items: center;
     }
-
-
-    .sectionSix__info{
+    .sectionSix__info {
         font-size: 12px;
         height: auto;
     }
     .elements__1 {
         width: 80%;
     }
-
-    .element1__text2{
+    .element1__text2 {
         align-self: center;
     }
-
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
@@ -1584,7 +1579,6 @@ footer .btn-social {
         width: 8vh;
         font-size: 1vh;
     }
-
     #carousel p {
         width: 7vh;
         top: 19%;
