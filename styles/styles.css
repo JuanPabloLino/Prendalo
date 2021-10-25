@@ -1080,6 +1080,8 @@ footer .btn-social {
         height: auto;
         width: 5vh;
         margin-top: 3vh;
+        display:block;
+        
     }
     /* Section Four */
     /* Section Five */
