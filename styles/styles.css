@@ -937,12 +937,15 @@ footer .btn-social {
         margin-top: 18px;
         font-size: 2vh;
     }
+
+    .redes{
+        padding-bottom: 3vh;
+    }
     /* Section One */
 
     .sectionTwo h2 {
         font-size: 25px;
     }
-
     .sectionTwo{
         margin-top: 2vh;
     }
