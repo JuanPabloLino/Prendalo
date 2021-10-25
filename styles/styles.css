@@ -806,7 +806,7 @@ footer .btn-social {
         justify-content: flex-start;
         justify-content: space-between;
         margin: 0vh;
-        width: 62%;
+        width: 67%;
     }
     .navbar-collapse {
         position: fixed;
@@ -1132,6 +1132,11 @@ footer .btn-social {
     .elements__1 {
         width: 80%;
     }
+
+    .element1__text2{
+        align-self: center;
+    }
+
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
