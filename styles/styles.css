@@ -1076,12 +1076,12 @@ footer .btn-social {
         height: auto;
     }
     .elements__1 b {
-        margin: 2vh;
+        margin: 1vh;
         font-size: var(--font-18);
     }
     .elements__1 p {
         text-align: center;
-        margin: 2vh;
+        margin: 1vh;
     }
     .sectionFour__button {
         height: 7vh;
@@ -1095,6 +1095,12 @@ footer .btn-social {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+
+    .sectionSix__info{
+        font-size: 12px;
+        height: auto;
     }
     .elements__1 {
         width: 80%;
