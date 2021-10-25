@@ -117,6 +117,13 @@ li a {
     margin-right: 10vh;
 }
 
+.link__vip3 {
+    color: var(--dark-blue);
+    font-size: 2vh;
+    font-weight: 500;
+    margin-left: 3vh;
+}
+
 .navbar-collapse {
     justify-content: flex-end;
     color: var(--dark-blue);
@@ -126,8 +133,8 @@ li a {
     display: none;
 }
 
-.logo b {
-    font-size: 3vh;
+.logo b a {
+    font-size: 3.5vh;
     font-weight: var(--font-black);
     color: var(--dark-blue);
 }
@@ -334,6 +341,11 @@ li a {
     display: none;
     text-align: center;
 }
+.images__infoMobile1 img{
+    height: auto;
+    width: 5vh;
+    margin-top: 3vh;
+}
 
 /* Section three */
 
@@ -521,9 +533,8 @@ li a {
 
 .sectionFourBtnBack{
     background-color: var(--blue-light);
-    height: 30vh;
+    height: 15vh;
     margin-bottom: 10vh;
-    
 }
 
 .sectionFour__button {
@@ -563,6 +574,11 @@ li a {
 .sectionFive__element img {
     opacity: 0;
     width: 100%;
+}
+
+.sectionFive__link{
+    text-decoration: none;
+    color: black;
 }
 
 .border-right {
@@ -605,18 +621,17 @@ li a {
 
 .sectionSix__title {
     color: var(--yellow);
-    font-size: var(--font-21);
-    
-
+    font-size: 3vh;
+    text-align: center;
 }
 
 .sectionSix__info {
     color: var(--dark-blue);
     font-weight: var(--font-medium);
-    text-align: justify;
-    justify-content: center;
     align-self: center;
-    font-size: small;
+    font-size: 1.8vh;
+    text-align: justify;
+    margin:1vh;
 }
 
 .sectionSix__button {
@@ -682,6 +697,78 @@ footer .btn-social {
 .btn:hover {
     border-color: var(--dark-blue);
 }
+
+/* Pestañas Calificacion-prestamo-gracias */
+
+.header__pestaña{
+    height: 8vh;
+    width: 100%;
+    background-color:var(--orange);
+    color: white;
+    display: flex;
+    align-items:center;
+    align-content: center;
+    justify-content: center
+}
+
+.header__pestaña p {
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+.sectionSimulador{
+    display: flex;
+    justify-content: center;
+    height: 82vh;
+    background-color:var(--blue-light);
+}
+
+.sectionSimulador__data{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.footer b {
+    font-size: 3vh
+}
+
+.footer p {
+    font-size: 1.5vh;
+}
+
+.sectionGracias{
+    display: flex;
+    align-items: center;
+    height: 82vh;
+}
+
+.sectionGracias__data{
+    width: 75%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.sectionGracias__image{
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.redes__data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Pestañas Calificacion-prestamo-gracias */
 
 /* Media Queries */
 
@@ -759,7 +846,7 @@ footer .btn-social {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 58vh;
+        height: 88vh;
     }
     .sectionOne__images {
         justify-content: center;
@@ -768,13 +855,13 @@ footer .btn-social {
         width: 22vh;
         height: auto;
         left: 48.5vh;
-        top: 4vh;
+        top: 19vh;
     }
     .images__redCar {
         width: 36vh;
         height: auto;
         left: 5.5vh;
-        top: -1vh;
+        top: 15vh;
     }
     .sectionOne__element1 {
         display: flex;
@@ -782,16 +869,21 @@ footer .btn-social {
         align-items: center;
         width: 100%;
         margin-left: 0px;
+        margin-top: 15vh;
     }
+
+    .link__vip3{
+        margin-left: 0px;
+        margin-top: 1vh;
+    }
+
     .element1__info {
         display: flex;
+        flex-direction: column;
         margin-top: 18px;
     }
     .element1__info p {
         margin-right: 9px;
-    }
-    .sectionOne__element1 b {
-        color: var(--white);
     }
     .sectionOne__element2 {
         display: flex;
@@ -972,9 +1064,23 @@ footer .btn-social {
     }
 
     .sectionFour__button {
-        height: 6vh;
+        height: 7vh;
     }
     /* Section Six */
+    .footer{
+        justify-content: flex-start;
+        height: 10vh;
+    }
+
+    .sectionSix__elements{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elements__1{
+        width: 80%;
+    }
 }
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
     .header {
@@ -1101,6 +1207,13 @@ footer .btn-social {
         left: 40vh;
     }
     /* Section Four */
+
+    .footer{
+        justify-content: flex-start;
+        height: 13vh;
+    }
+
+    
 }
 @media only screen and (min-width: 1201px) and (max-width:1589px) {
     .navbar {
@@ -1339,9 +1452,9 @@ footer .btn-social {
     .sectionFour__information {
         width: 100%;
     }
-.title__element{
+    .title__element{
     font-size: 34px;
-}
+    }
 
     .informationElements__information {
         left: 49vh;
@@ -1395,7 +1508,6 @@ footer .btn-social {
     }
     /* Section Four */
 }
-
 @media only screen and (min-height: 800px) and (max-height:825px){
     .carousel-container {
         top: 21%;
@@ -1422,5 +1534,6 @@ footer .btn-social {
     }
 
 }
+
 
 /* Media Queries */
