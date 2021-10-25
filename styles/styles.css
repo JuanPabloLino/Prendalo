@@ -213,7 +213,6 @@ li a {
 
 .element2__button {
     background-color: var(--orange);
-    color: var(--letter-white-color);
     font-weight: var(--font-bold);
     border-radius: 4vh;
     margin-top: 1vh;
@@ -221,6 +220,21 @@ li a {
     width: 20vh;
     height: 6vh;
     border: 0;
+    color: var(--letter-white-color);
+}
+
+.element2__button a {
+    text-decoration: none;
+    color: white;
+}
+
+.sectionFour__button{
+    color: var(--letter-white-color);
+}
+
+.sectionFour__button a {
+    text-decoration: none;
+    color: var(--letter-white-color);
 }
 
 /* Section One */
@@ -545,6 +559,10 @@ li a {
     width: 25vh;
     height: 6vh;
     font-size: 2vh;
+}
+
+.sectionFour__button a{
+    color: white;
 }
 
 /* Section four */
@@ -902,10 +920,10 @@ footer .btn-social {
     .sectionOne__element2 p {
         margin-top: 12px;
         margin-left: 0px;
-        font-size: 12px;
+        font-size: 2vh;
     }
     .element2__button {
-        height: 30px;
+        height: 7vh;
         margin-top: 18px;
         font-size: 11px;
     }
@@ -998,11 +1016,11 @@ footer .btn-social {
         height: 44vh;
     }
     #carousel p {
-        width: 7.6vh;
+        width: 8.5vh;
     }
     .carousel-container {
         top: 27%;
-        left: 43%;
+        left: 44%;
         width: 16%;
         right: auto;
     }
@@ -1525,6 +1543,11 @@ footer .btn-social {
     .information__text2 {
         width: 8vh;
         font-size: 1vh;
+    }
+
+    #carousel p {
+        width: 7vh;
+        top: 20%;
     }
 }
 
