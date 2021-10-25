@@ -357,9 +357,8 @@ li a {
 }
 
 .images__infoMobile1 img {
-    height: auto;
-    width: 5vh;
-    margin-top: 3vh;
+    display: none;
+    
 }
 
 /* Section three */
@@ -854,6 +853,12 @@ footer .btn-social {
         justify-content: flex-start;
         align-items: stretch;
     }
+
+    .navbar-collapse.show ul{
+        justify-content: flex-start;
+        margin-right:2vh ;
+        width: 100% ;
+    }
     .navbar-toggler.collapsed~.navbar-collapse {
         transition: left 800ms ease-in-out;
         border-style: none;
@@ -864,7 +869,7 @@ footer .btn-social {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 77vh;
+        height: 90vh;
     }
     .sectionOne__images {
         justify-content: center;
@@ -878,7 +883,7 @@ footer .btn-social {
         height: auto;
         left: 20%;
         position: absolute;
-        top: 38vh;
+        top: 45vh;
         ;
     }
     .images__redCar {
@@ -1053,6 +1058,12 @@ footer .btn-social {
     .information__text2 {
         width: 8vh;
         font-size: 1.1vh;
+    }
+
+    .images__infoMobile1 img{
+        height: auto;
+        width: 5vh;
+        margin-top: 3vh;
     }
     /* Section Four */
     /* Section Five */
