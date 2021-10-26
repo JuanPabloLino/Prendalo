@@ -133,9 +133,12 @@ li a {
     justify-content: flex-end;
 }
 
-.navbar-collapse button {
+.navbar-light .navbar-toggler{
+    border-color: var(--blue-light);
+}
+
+.navbar-collapse__button {
     display: none;
-    margin-left: 20px;
 }
 
 .logo b a {
@@ -391,7 +394,6 @@ li a {
     margin: auto;
     background-size: 100%;
 }
-
 #carousel .carousel-item {
     background-size: cover;
     background-position: center;
@@ -532,6 +534,7 @@ li a {
     width: 6.5rem;
     text-align: left;
     font-size: 1rem;
+    margin-top: 3vh;
 }
 
 .information2__text1 {
@@ -703,6 +706,10 @@ li a {
     background-color: var(--orange);
     height: 10vh;
     font-size: 3vh;
+}
+
+.svg-inline--fa.fa-fw{
+    width: 4.5vh;
 }
 
 .footer p {
@@ -952,9 +959,6 @@ footer .btn-social {
         margin-top: 18px;
         font-size: 2vh;
     }
-    .redes {
-        padding-bottom: 3vh;
-    }
     /* Section One */
     .sectionTwo h2 {
         font-size: 25px;
@@ -1009,10 +1013,26 @@ footer .btn-social {
     }
     .footer {
         font-size: 2vh;
-        height: 20vh;
+        height: 9vh;
     }
+
+    .redes__style{
+        flex-direction: column-reverse;
+        margin-bottom: 1.5vh;
+    }
+
+    .redes__style p{
+        margin-top: .5vh;
+    }
+    .svg-inline--fa.fa-fw{
+        width: 3vh;
+    }
+    .footer b {
+        font-size: 2vh;
+    }
+
     .footer p {
-        font-size: 1.5vh;
+        font-size: 1.2vh;
     }
     .hero {
         flex-direction: column;
@@ -1127,10 +1147,6 @@ footer .btn-social {
         height: 7vh;
     }
     /* Section Six */
-    .footer {
-        justify-content: flex-start;
-        height: 13vh;
-    }
     .sectionSix__elements {
         display: flex;
         flex-direction: column;
