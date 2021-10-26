@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.fromdoppler.com/formgenerator/latest/vendor.js?18809925"></script>
+    <link rel="stylesheet" href="https://cdn.fromdoppler.com/formgenerator/latest/styles.css?18809925" />
+
+</head>
+<body>
+
+    <div class="form" id="calcForm">
+      <div class="title">Calcule su cuota <br> en 3 pasos:</div>
+      <div class="input-container ic1">
+        <div class="labelContainer">
+          <span class="titleLabel">Elija su linea de crédito</span>
+        </div>
+        <div class="typeLableContainer">
+          <input type="button" value="Auto" data-type="0" class="formButton" onClick="selectType(this)">
+          <input type="button" value="Moto" data-type="1" class="formButton" onClick="selectType(this)">
+          <input type="button" value="Camion" data-type="2" class="formButton" onClick="selectType(this)">
+        </div>
+      </div>
+      <div class="input-container ic2">
+        <div class="labelContainer" id="amountContainer">
+          <span class="titleLabel">Seleccione monto a financiar</span>
+          <span class="rangeLabel" id="amountLabel"></span>
+        </div>
+      </div>
+      <div class="input-container ic2">
+        <div class="labelContainer" id="duesContainer">
+          <span class="titleLabel">Seleccione cantidad de cuotas</span>
+        </div>
+      </div>
+      <div class="input-container ic2" id="result">
+        <div id="duesLabel">
+          <div class="labelContainer" id="duesContainer">
+            <span class="titleLabel">Cargue sus datos y calcule!</span>
+          </div>
+        </div>
+        <div data-dp-form="ODSYbNjRkbLCAMkLhIQ3Yg%3d%3d" id="detectSubmit" class="dopplerForm"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-auth-compat.js"></script>
+    <script>
+      const firebaseApp = firebase.initializeApp({
+        apiKey: "AIzaSyBlF07VWE8Z0QXX0y-v4x65qrZP4952iK0",
+        authDomain: "prendalo.firebaseapp.com",
+        projectId: "prendalo",
+        storageBucket: "prendalo.appspot.com",
+        messagingSenderId: "946381494229",
+        appId: "1:946381494229:web:e71fcaed5ead9e83844f5c"
+      });
+      const db = firebaseApp.firestore();
+    </script>
+
+    <script src='./app.js'></script>
+</body>
+</html>

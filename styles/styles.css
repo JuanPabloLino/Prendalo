@@ -743,7 +743,7 @@ footer .btn-social {
 .sectionSimulador {
     display: flex;
     justify-content: center;
-    height: 82vh;
+    height: 100%;
     background-color: var(--blue-light);
 }
 
