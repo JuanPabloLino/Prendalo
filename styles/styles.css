@@ -172,12 +172,12 @@ li a {
 }
 
 .images__man {
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
 .images__redCar {
-    position: absolute;
+    position: relative;
     z-index: 0;
 }
 
@@ -908,21 +908,23 @@ footer .btn-social {
         height: auto;
         left: 48.5vh;
         top: 19vh; */
+        position: absolute;
         width: 30vh;
-    height: auto;
-    left: 33%;
-    position: absolute;
-    top: 49vh;
+        height: auto;
+        left: 33%;
+        position: absolute;
+        top: 49vh;
     }
     .images__redCar {
         /* width: 36vh;
         height: auto;
         left: 5.5vh;
         top: 15vh; */
+        position: absolute;
         width: 33vh;
         height: auto;
-        left: 6%;
-        top: 48%;
+        left: 1.5vh;
+        top: 47vh;
     }
     .sectionOne__element1 {
         display: flex;
