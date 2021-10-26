@@ -172,12 +172,12 @@ li a {
 }
 
 .images__man {
-    position: relative;
+    position: absolute;
     z-index: 1;
 }
 
 .images__redCar {
-    position: relative;
+    position: absolute;
     z-index: 0;
 }
 
@@ -921,8 +921,8 @@ footer .btn-social {
         top: 15vh; */
         width: 33vh;
         height: auto;
-        left: 13.5vh;
-        top: 13vh;
+        left: 6%;
+        top: 48%;
     }
     .sectionOne__element1 {
         display: flex;
