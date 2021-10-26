@@ -113,8 +113,13 @@ li a {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--dark-blue);
     margin-right: 10vh;
+    color: var(--dark-blue);
+}
+
+.item__link a{
+    color: var(--dark-blue);
+    color: red;
 }
 
 .link__vip3 {
@@ -126,11 +131,11 @@ li a {
 
 .navbar-collapse {
     justify-content: flex-end;
-    color: var(--dark-blue);
 }
 
-.navbar-collapse__button {
+.navbar-collapse button {
     display: none;
+    margin-left: 20px;
 }
 
 .logo b a {
@@ -819,10 +824,11 @@ footer .btn-social {
         left: 0;
         padding-bottom: 15px;
         padding-top: 5vh;
-        width: 45%;
+        width: 50%;
         height: 100%;
         background-color: var(--dark-blue);
     }
+
     .navbar-collapse__button {
         padding-right: 2vh;
         display: flex;
@@ -832,10 +838,17 @@ footer .btn-social {
         background-color: var(--dark-blue);
         border-style: none;
     }
+
     .navbar-light .navbar-nav .nav-link.active {
-        color: var(--white);
+        color: white;
         margin-right: 0vh;
         text-align: initial;
+        padding-left: 4vh;
+        font-size: 1.5vh;
+    }
+
+    .link__vip2 a{
+        color: var(--blue-light);
     }
     .navbar-light .navbar-toggler {
         border-color: none;
@@ -871,6 +884,7 @@ footer .btn-social {
         transition: left 800ms ease-in-out;
         border-style: none;
     }
+
     /* NavBar */
     /* Section One */
     .sectionOne {
@@ -887,23 +901,21 @@ footer .btn-social {
         height: auto;
         left: 48.5vh;
         top: 19vh; */
-        width: 34vh;
-        height: auto;
-        left: 20%;
-        position: absolute;
-        top: 43vh;
-        ;
+        width: 30vh;
+    height: auto;
+    left: 33%;
+    position: absolute;
+    top: 49vh;
     }
     .images__redCar {
         /* width: 36vh;
         height: auto;
         left: 5.5vh;
         top: 15vh; */
-        width: 44vh;
+        width: 39vh;
         height: auto;
         left: 11.5vh;
-        display: none;
-        top: 4vh;
+        top: 11vh;
     }
     .sectionOne__element1 {
         display: flex;
@@ -1265,6 +1277,8 @@ footer .btn-social {
         justify-content: flex-start;
         height: 13vh;
     }
+
+
 }
 
 @media only screen and (min-width: 1201px) and (max-width:1589px) {
