@@ -791,6 +791,11 @@ footer .btn-social {
     background-color: var(--blue-light);
 }
 
+.calificacion__data{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 .sectionSimulador__data {
     width: 50%;
     text-align: center;
@@ -824,7 +829,6 @@ footer .btn-social {
 
 .sectionGracias__image {
     height: 50vh;
-    width: 50%;
     display: flex;
     justify-content: flex-start;
 }
