@@ -228,9 +228,9 @@ li a {
     font-weight: var(--font-bold);
     border-radius: 4vh;
     margin-top: 1vh;
-    font-size: 2vh;
+    font-size: 1.5vh;
     width: 20vh;
-    height: 6vh;
+    height: 4vh;
     border: 0;
     color: var(--letter-white-color);
 }
@@ -573,8 +573,8 @@ li a {
     font-weight: var(--font-bold);
     border-radius: 4vh;
     width: 25vh;
-    height: 6vh;
-    font-size: 2vh;
+    height: 4vh;
+    font-size: 1.5vh;
 }
 
 .sectionFour__button a {
@@ -977,9 +977,9 @@ footer .btn-social {
         font-size: 2vh;
     }
     .element2__button {
-        height: 7vh;
+        height: 4vh;
         margin-top: 18px;
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
     /* Section One */
     .sectionTwo h2 {
@@ -1162,7 +1162,8 @@ footer .btn-social {
         margin: 1vh;
     }
     .sectionFour__button {
-        height: 7vh;
+        height: 4vh;
+        width: 22vh;
     }
     /* Section Six */
     .sectionSix__elements {
