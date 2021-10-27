@@ -757,9 +757,11 @@ footer .btn-social {
     justify-content: center
 }
 
-.header__pestaña p {
+.header__pestaña a {
+    color: white;
     font-weight: 600;
     font-size: 3vh;
+    text-decoration: none;
 }
 
 .sectionSimulador {
