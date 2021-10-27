@@ -171,6 +171,10 @@ li a {
     height: 80vh;
 }
 
+.info__coma{
+    display: none;
+}
+
 .images__man {
     position: relative;
     z-index: 1;
@@ -934,17 +938,27 @@ footer .btn-social {
         margin-left: 0px;
         margin-top: 8vh;
     }
+    .sectionOne__element1 {
+        font-size: 20px;
+        width: 100%;
+    }
+    .info__coma{
+        display: block;
+        margin-right: 5px;
+    }
+    b {
+        font-weight: 600;
+    }
+    .sectionOne__element1 b{
+        color: var(--white);
+    }
     .link__vip3 {
         margin-left: 0px;
         margin-top: 1vh;
     }
     .element1__info {
         display: flex;
-        flex-direction: column;
         margin-top: 18px;
-    }
-    .element1__info p {
-        margin-right: 9px;
     }
     .sectionOne__element2 {
         display: flex;
@@ -1038,10 +1052,6 @@ footer .btn-social {
     }
     .hero {
         flex-direction: column;
-    }
-    .sectionOne__element1 {
-        font-size: 30px;
-        width: 100%;
     }
     .sectionOne__element1 {
         flex-direction: column;
