@@ -572,9 +572,9 @@ li a {
     color: var(--white);
     font-weight: var(--font-bold);
     border-radius: 4vh;
-    width: 25vh;
-    height: 4vh;
-    font-size: 1.5vh;
+    width: 45vh;
+    height: 5.5vh;
+    font-size: 2vh;
 }
 
 .sectionFour__button a {
@@ -704,6 +704,17 @@ li a {
     color: var(--white);
     font-size: 20px;
 }
+
+
+.sectionSeven p  a {
+    color: var(--white);
+    text-decoration: none;
+}
+.sectionSeven p  a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
 
 /* Section seven */
 
