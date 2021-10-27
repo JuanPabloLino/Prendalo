@@ -819,7 +819,7 @@ footer .btn-social {
 
 @media only screen and (max-width: 800px) {
     .header {
-        height: 11vh;
+        height: 8.5vh;
     }
     .li a {
         text-align: initial;
@@ -974,11 +974,7 @@ footer .btn-social {
     .element2__button {
         height: 4vh;
         margin-top: 18px;
-<<<<<<< HEAD
-        font-size: 10px;
-=======
         font-size: 1.5vh;
->>>>>>> 322f230145167d0bb77fe9b08fdd88996727c29f
     }
     /* Section One */
     .sectionTwo h2 {
@@ -986,7 +982,7 @@ footer .btn-social {
     }
     .sectionTwo {
         margin-top: 5vh;
-        height: 30vh;
+        height: 15vh;
     }
     /* Section Three */
     .sectionThree {
@@ -1027,11 +1023,16 @@ footer .btn-social {
     .elements__1 button {
         font-size: 12px;
     }
+
+    .sectionSeven {
+        height: 12vh;
+    }
+
     .sectionSeven b {
-        font-size: 25px;
+        font-size: 16px;
     }
     .sectionSeven p {
-        font-size: 15px;
+        font-size: 10px;
     }
     .footer {
         font-size: 2vh;
@@ -1160,7 +1161,7 @@ footer .btn-social {
     }
     .sectionFour__button {
         height: 4vh;
-        width: 22vh;
+        width: 30vh;
     }
     /* Section Six */
     .sectionSix__elements {
@@ -1181,6 +1182,16 @@ footer .btn-social {
     .logo b a {
         font-size: 14px;
     }
+.images__infoMobile h4 {
+    font-size: 16px;
+}
+
+.link__vip3{
+    font-size: 10px;
+
+}
+
+
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
