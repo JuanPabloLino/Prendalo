@@ -117,7 +117,7 @@ li a {
     color: var(--dark-blue);
 }
 
-.item__link a{
+.item__link a {
     color: var(--dark-blue);
     color: red;
 }
@@ -133,7 +133,7 @@ li a {
     justify-content: flex-end;
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-toggler {
     border-color: var(--blue-light);
 }
 
@@ -171,7 +171,7 @@ li a {
     height: 80vh;
 }
 
-.info__coma{
+.info__coma {
     display: none;
 }
 
@@ -243,7 +243,6 @@ li a {
 .sectionSix__button a {
     text-decoration: none;
     color: var(--dark-blue);
-    
 }
 
 .sectionFour__button {
@@ -398,6 +397,7 @@ li a {
     margin: auto;
     background-size: 100%;
 }
+
 #carousel .carousel-item {
     background-size: cover;
     background-position: center;
@@ -585,7 +585,7 @@ li a {
 
 /* Section five */
 
-.sectionFive{
+.sectionFive {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -718,7 +718,7 @@ li a {
     font-size: 3vh;
 }
 
-.svg-inline--fa.fa-fw{
+.svg-inline--fa.fa-fw {
     width: 4.5vh;
 }
 
@@ -832,7 +832,7 @@ footer .btn-social {
         justify-content: flex-start;
         justify-content: space-between;
         margin: 0vh;
-        width: 67%;
+        width: 59%;
     }
     .navbar-collapse {
         position: fixed;
@@ -845,7 +845,6 @@ footer .btn-social {
         height: 100%;
         background-color: var(--dark-blue);
     }
-
     .navbar-collapse__button {
         padding-right: 2vh;
         display: flex;
@@ -855,7 +854,6 @@ footer .btn-social {
         background-color: var(--dark-blue);
         border-style: none;
     }
-
     .navbar-light .navbar-nav .nav-link.active {
         color: white;
         margin-right: 0vh;
@@ -863,8 +861,7 @@ footer .btn-social {
         padding-left: 4vh;
         font-size: 1.5vh;
     }
-
-    .link__vip2 a{
+    .link__vip2 a {
         color: var(--blue-light);
     }
     .navbar-light .navbar-toggler {
@@ -901,14 +898,13 @@ footer .btn-social {
         transition: left 800ms ease-in-out;
         border-style: none;
     }
-
     /* NavBar */
     /* Section One */
     .sectionOne {
         font-size: 21px;
         font-weight: var(--font-bold);
         width: 100%;
-        height: 88vh;
+        height: 60vh;
     }
     .sectionOne__images {
         justify-content: center;
@@ -918,12 +914,11 @@ footer .btn-social {
         height: auto;
         left: 48.5vh;
         top: 19vh; */
-        position: absolute;
-        width: 30vh;
+        width: 26vh;
         height: auto;
-        left: 33%;
+        left: 43%;
         position: absolute;
-        top: 49vh;
+        top: 26vh;
     }
     .images__redCar {
         /* width: 36vh;
@@ -933,8 +928,8 @@ footer .btn-social {
         position: absolute;
         width: 33vh;
         height: auto;
-        left: 1.5vh;
-        top: 47vh;
+        left: -1.5vh;
+        top: 28vh;
     }
     .sectionOne__element1 {
         display: flex;
@@ -948,14 +943,14 @@ footer .btn-social {
         font-size: 20px;
         width: 100%;
     }
-    .info__coma{
+    .info__coma {
         display: block;
         margin-right: 5px;
     }
     b {
         font-weight: 600;
     }
-    .sectionOne__element1 b{
+    .sectionOne__element1 b {
         color: var(--white);
     }
     .link__vip3 {
@@ -979,14 +974,15 @@ footer .btn-social {
     .element2__button {
         height: 7vh;
         margin-top: 18px;
-        font-size: 2vh;
+        font-size: 10px;
     }
     /* Section One */
     .sectionTwo h2 {
-        font-size: 25px;
+        font-size: 16px;
     }
     .sectionTwo {
-        margin-top: 2vh;
+        margin-top: 5vh;
+        height: 30vh;
     }
     /* Section Three */
     .sectionThree {
@@ -1037,22 +1033,19 @@ footer .btn-social {
         font-size: 2vh;
         height: 9vh;
     }
-
-    .redes__style{
+    .redes__style {
         flex-direction: column-reverse;
         margin-bottom: 1.5vh;
     }
-
-    .redes__style p{
+    .redes__style p {
         margin-top: .5vh;
     }
-    .svg-inline--fa.fa-fw{
+    .svg-inline--fa.fa-fw {
         width: 3vh;
     }
     .footer b {
         font-size: 2vh;
     }
-
     .footer p {
         font-size: 1.2vh;
     }
@@ -1179,6 +1172,9 @@ footer .btn-social {
     }
     .element1__text2 {
         align-self: center;
+    }
+    .logo b a {
+        font-size: 14px;
     }
 }
 
@@ -1311,8 +1307,6 @@ footer .btn-social {
         justify-content: flex-start;
         height: 13vh;
     }
-
-
 }
 
 @media only screen and (min-width: 1201px) and (max-width:1589px) {
