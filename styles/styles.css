@@ -585,6 +585,12 @@ li a {
 
 /* Section five */
 
+.sectionFive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sectionFive b {
     font-size: 40px;
     margin: 0 1em 0 1em;
