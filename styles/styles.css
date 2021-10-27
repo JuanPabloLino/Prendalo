@@ -783,6 +783,14 @@ footer .btn-social {
     background-color: var(--blue-light);
 }
 
+.sectionPre_calificacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background-color: var(--blue-light);
+}
+
 .sectionSimulador__data {
     width: 50%;
     text-align: center;
@@ -804,7 +812,7 @@ footer .btn-social {
 .sectionGracias {
     display: flex;
     align-items: center;
-    height: 82vh;
+    height: 83vh;
 }
 
 .sectionGracias__data {
@@ -819,6 +827,10 @@ footer .btn-social {
     width: 50%;
     display: flex;
     justify-content: flex-start;
+}
+
+.sectionGracias p{
+   width: 48%;
 }
 
 .redes__data {
@@ -1203,6 +1215,27 @@ footer .btn-social {
 .link__vip3{
     font-size: 10px;
 
+}
+
+.sectionGracias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionGracias p{
+    width: 80%;
+    margin-top: 8vh;
+}
+
+.sectionGracias__image {
+    justify-content: center;
+}
+
+.calificacion__data{
+    width: 80%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 
