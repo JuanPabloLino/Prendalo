@@ -705,6 +705,17 @@ li a {
     font-size: 20px;
 }
 
+
+.sectionSeven p  a {
+    color: var(--white);
+    text-decoration: none;
+}
+.sectionSeven p  a:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
 /* Section seven */
 
 .footer {
