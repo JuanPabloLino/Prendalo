@@ -54,6 +54,11 @@ html, body{
 ._dp_form-footer{
   display: none!important;
 }
+
+._dp_container-confirmation{
+  display: none!important;
+  visibility: hidden!important;
+}
   
 .form {
   background-color: #70BBDA;

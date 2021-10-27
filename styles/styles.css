@@ -779,7 +779,7 @@ footer .btn-social {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
     background-color: var(--blue-light);
 }
 

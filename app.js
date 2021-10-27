@@ -1,8 +1,10 @@
 // Doppler form styling
 let isSubmited = false;
+let rangeVal = 0;
 
 $("#detectSubmit").on("submit", (e) => {
     e.preventDefault();
+    rangeVal = amount.value;
     isSubmited = true;
     $("#duesInputs").remove()
     $("#amount").remove()
@@ -109,7 +111,7 @@ const assingType = (data) => {
   })
   
   $("#amountContainer").after(`
-    <input type="range" min="${data.minMax.min}" max="${data.minMax.max}" step="${data.rangeStep}" value="0" class="rangeInput" id="amount"/>
+    <input type="range" min="${data.minMax.min}" max="${data.minMax.max}" step="${data.rangeStep}" value="${rangeVal}" class="rangeInput" id="amount"/>
   `)
   updateInputs(data)
 }
