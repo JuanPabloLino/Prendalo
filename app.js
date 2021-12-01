@@ -77,7 +77,7 @@ const updateInputs = (data) => {
         $("#result").html(''),
         $("#result").append(`<div id="duesLabel"><em>${parsedVal}</em> cuotas de <br/> <em>${formatter.format(due)}</em>  x Mes</div>`)
         $("#result").prepend('<div class="labelContainer" id="duesContainer"><span class="titleLabel finalLabel">Tu resultado:</span></div>')
-        $("#result").append(`<button onclick="location.href='https://www.prendalo.com.ar/pre_calificacion'" class="final-button"></button>`)
+        $("#result").append(`<button onclick="location.href='https://procredit.com.ar/inicio-de-solicitud'" class="final-button"></button>`)
       },100)
 
     : null
